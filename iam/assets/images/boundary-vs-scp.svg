@@ -1,0 +1,40 @@
+<svg viewBox="0 0 900 520" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="0" y="0" width="900" height="520" fill="#F7F9FC"/>
+  <text x="450" y="36" text-anchor="middle" font-size="24" font-weight="700" fill="#232F3E">Permission Boundary vs SCP</text>
+  <text x="450" y="58" text-anchor="middle" font-size="13" fill="#5A6B7D">Both are ceilings. Neither one ever grants access.</text>
+
+  <!-- Organization outer -->
+  <rect x="50" y="90" width="800" height="400" rx="20" fill="#F3E9FB" stroke="#8C4FD1" stroke-width="3"/>
+  <text x="75" y="118" font-size="15" font-weight="700" fill="#4B2570">🏛️ AWS Organization — SCP applies to every account, even root</text>
+
+  <!-- Account A -->
+  <rect x="90" y="140" width="340" height="320" rx="16" fill="#FFFFFF" stroke="#8C4FD1" stroke-width="2" stroke-dasharray="7,5"/>
+  <text x="260" y="168" text-anchor="middle" font-size="14" font-weight="700" fill="#4B2570">Account A</text>
+
+  <!-- boundary fence inside account A -->
+  <rect x="120" y="190" width="280" height="130" rx="12" fill="#EDE0FB" stroke="#8C4FD1" stroke-width="2"/>
+  <text x="260" y="214" text-anchor="middle" font-size="12.5" font-weight="700" fill="#4B2570">🚧 Permission Boundary</text>
+  <text x="260" y="232" text-anchor="middle" font-size="10.5" fill="#4B2570">caps ONE role/user only</text>
+  <circle cx="200" cy="270" r="22" fill="#FF9900"/>
+  <text x="200" y="277" text-anchor="middle" font-size="16" fill="#fff">🎫</text>
+  <text x="200" y="304" text-anchor="middle" font-size="10" fill="#4B2570">TeamLeadRole</text>
+  <circle cx="320" cy="270" r="22" fill="#146EB4"/>
+  <text x="320" y="277" text-anchor="middle" font-size="16" fill="#fff">🪪</text>
+  <text x="320" y="304" text-anchor="middle" font-size="10" fill="#4B2570">no boundary set</text>
+
+  <text x="260" y="345" text-anchor="middle" font-size="11" fill="#4B2570">Root user in Account A</text>
+  <text x="260" y="360" text-anchor="middle" font-size="10" fill="#4B2570">(SCP still applies here!)</text>
+  <circle cx="260" cy="410" r="24" fill="#D13212"/>
+  <text x="260" y="418" text-anchor="middle" font-size="16" fill="#fff">🔑</text>
+
+  <!-- Account B -->
+  <rect x="470" y="140" width="340" height="320" rx="16" fill="#FFFFFF" stroke="#8C4FD1" stroke-width="2" stroke-dasharray="7,5"/>
+  <text x="640" y="168" text-anchor="middle" font-size="14" font-weight="700" fill="#4B2570">Account B</text>
+  <text x="640" y="260" text-anchor="middle" font-size="12" fill="#5A6B7D">No permission boundaries set —</text>
+  <text x="640" y="278" text-anchor="middle" font-size="12" fill="#5A6B7D">individual identity policies</text>
+  <text x="640" y="296" text-anchor="middle" font-size="12" fill="#5A6B7D">are the only ceiling here</text>
+  <text x="640" y="330" text-anchor="middle" font-size="11" fill="#4B2570">but the SCP from the org</text>
+  <text x="640" y="346" text-anchor="middle" font-size="11" fill="#4B2570">still wraps around everything</text>
+
+  <text x="450" y="500" text-anchor="middle" font-size="12" fill="#232F3E">Permission Boundary = fence around one badge. SCP = fire code for every building the company owns.</text>
+</svg>

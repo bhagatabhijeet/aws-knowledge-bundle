@@ -1,0 +1,44 @@
+<svg viewBox="0 0 900 560" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="0" y="0" width="900" height="560" fill="#F7F9FC"/>
+  <text x="450" y="36" text-anchor="middle" font-size="24" font-weight="700" fill="#232F3E">Concentric Gates to the Room</text>
+  <text x="450" y="58" text-anchor="middle" font-size="13" fill="#5A6B7D">One locked gate stops you, no matter how many others are open</text>
+
+  <!-- Gate 0: SCP -->
+  <rect x="70" y="90" width="760" height="430" rx="20" fill="#F3E9FB" stroke="#8C4FD1" stroke-width="3"/>
+  <text x="100" y="120" font-size="15" font-weight="700" fill="#4B2570">Gate 0 — SCP (company fire code, whole org)</text>
+
+  <!-- Gate 1: Boundary -->
+  <rect x="110" y="140" width="680" height="350" rx="18" fill="#EDE0FB" stroke="#8C4FD1" stroke-width="2" stroke-dasharray="8,5"/>
+  <text x="140" y="168" font-size="14" font-weight="700" fill="#4B2570">Gate 1 — Permission Boundary (fence around this badge)</text>
+
+  <!-- Gate 2: Identity/Resource -->
+  <rect x="150" y="188" width="600" height="270" rx="16" fill="#DCEEFB" stroke="#146EB4" stroke-width="2"/>
+  <text x="180" y="214" font-size="14" font-weight="700" fill="#0B4F8A">Gate 2 — Identity Policy AND/OR Resource Policy</text>
+
+  <!-- Gate 3: Session -->
+  <rect x="190" y="232" width="520" height="190" rx="14" fill="#E7F6E5" stroke="#59B200" stroke-width="2"/>
+  <text x="220" y="258" font-size="14" font-weight="700" fill="#2E5C00">Gate 3 — Session Policy (if role-assumed)</text>
+
+  <!-- The Room -->
+  <rect x="370" y="290" width="160" height="100" rx="10" fill="#FFFFFF" stroke="#232F3E" stroke-width="2"/>
+  <text x="450" y="330" text-anchor="middle" font-size="16">🔒</text>
+  <text x="450" y="360" text-anchor="middle" font-size="13" font-weight="700" fill="#232F3E">The Room</text>
+  <text x="450" y="376" text-anchor="middle" font-size="10.5" fill="#5A6B7D">(AWS resource)</text>
+
+  <!-- Guard entering from left -->
+  <text x="140" y="330" font-size="26">🕵️</text>
+  <line x1="165" y1="322" x2="365" y2="330" stroke="#232F3E" stroke-width="2" marker-end="url(#arrow2)"/>
+  <text x="230" y="308" font-size="11" fill="#232F3E">request travels inward</text>
+
+  <defs>
+    <marker id="arrow2" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 z" fill="#232F3E"/>
+    </marker>
+  </defs>
+
+  <!-- Legend -->
+  <rect x="90" y="495" width="20" height="20" fill="#D13212"/>
+  <text x="118" y="510" font-size="12.5" fill="#232F3E">One explicit Deny at ANY gate = instant stop</text>
+  <rect x="470" y="495" width="20" height="20" fill="#1D6B00"/>
+  <text x="498" y="510" font-size="12.5" fill="#232F3E">Allow needed at every applicable gate, with no Deny</text>
+</svg>

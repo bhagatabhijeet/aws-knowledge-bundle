@@ -1,0 +1,71 @@
+<svg viewBox="0 0 900 560" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1B2A4A"/>
+      <stop offset="100%" stop-color="#3A5A8C"/>
+    </linearGradient>
+    <linearGradient id="wall" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#37475E"/>
+      <stop offset="100%" stop-color="#232F3E"/>
+    </linearGradient>
+    <linearGradient id="roof" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#FFAC31"/>
+      <stop offset="100%" stop-color="#FF9900"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="0" y="0" width="900" height="560" fill="url(#sky)"/>
+  <circle cx="820" cy="60" r="30" fill="#FFD873" opacity="0.9"/>
+
+  <text x="450" y="42" text-anchor="middle" font-size="26" font-weight="700" fill="#FFFFFF">The IAM Office Building</text>
+  <text x="450" y="68" text-anchor="middle" font-size="14" fill="#CBD5E1">Your AWS Account, one floor per concept</text>
+
+  <!-- Building -->
+  <rect x="150" y="120" width="600" height="380" fill="url(#wall)" stroke="#0F1621" stroke-width="3" rx="6"/>
+  <polygon points="130,120 450,60 770,120" fill="url(#roof)" stroke="#B36B00" stroke-width="2"/>
+  <text x="450" y="98" text-anchor="middle" font-size="16" font-weight="700" fill="#232F3E">AWS ACCOUNT</text>
+
+  <!-- Floors -->
+  <!-- Floor 4: Root -->
+  <rect x="175" y="140" width="550" height="60" fill="#FFE8CC" stroke="#FF9900" stroke-width="2" rx="4"/>
+  <circle cx="210" cy="170" r="16" fill="#D13212"/>
+  <text x="210" y="176" text-anchor="middle" font-size="16" fill="#fff">🔑</text>
+  <text x="245" y="165" font-size="15" font-weight="700" fill="#7A2E00">Root User</text>
+  <text x="245" y="184" font-size="12.5" fill="#7A2E00">The master key — locked in a drawer, MFA-protected</text>
+
+  <!-- Floor 3: Roles/Users/Groups -->
+  <rect x="175" y="210" width="550" height="76" fill="#DCEEFB" stroke="#146EB4" stroke-width="2" rx="4"/>
+  <text x="210" y="232" font-size="16">🪪</text>
+  <text x="245" y="232" font-size="14" font-weight="700" fill="#0B4F8A">Users</text>
+  <text x="245" y="249" font-size="11.5" fill="#0B4F8A">Permanent badges</text>
+  <text x="400" y="232" font-size="16">🗂️</text>
+  <text x="435" y="232" font-size="14" font-weight="700" fill="#0B4F8A">Groups</text>
+  <text x="435" y="249" font-size="11.5" fill="#0B4F8A">Badge templates</text>
+  <text x="580" y="232" font-size="16">🎫</text>
+  <text x="615" y="232" font-size="14" font-weight="700" fill="#0B4F8A">Roles</text>
+  <text x="615" y="249" font-size="11.5" fill="#0B4F8A">Self-expiring passes</text>
+  <text x="245" y="272" font-size="11.5" fill="#0B4F8A">All three carry a copy of the rulebook wherever they go</text>
+
+  <!-- Floor 2: Policies + Guard -->
+  <rect x="175" y="296" width="550" height="76" fill="#E7F6E5" stroke="#59B200" stroke-width="2" rx="4"/>
+  <text x="210" y="322" font-size="16">📜</text>
+  <text x="245" y="322" font-size="14" font-weight="700" fill="#2E5C00">Policies</text>
+  <text x="245" y="339" font-size="11.5" fill="#2E5C00">The rulebook (JSON): who, what, which room, allow or deny</text>
+  <text x="540" y="322" font-size="16">🕵️</text>
+  <text x="575" y="322" font-size="14" font-weight="700" fill="#2E5C00">The Guard</text>
+  <text x="575" y="339" font-size="11.5" fill="#2E5C00">Evaluates every applicable rule</text>
+
+  <!-- Floor 1: Boundaries + Rooms -->
+  <rect x="175" y="386" width="550" height="94" fill="#F3E9FB" stroke="#8C4FD1" stroke-width="2" rx="4"/>
+  <text x="210" y="412" font-size="16">🚧</text>
+  <text x="245" y="412" font-size="14" font-weight="700" fill="#4B2570">Boundaries &amp; SCPs</text>
+  <text x="245" y="429" font-size="11.5" fill="#4B2570">Fences that cap the maximum possible access</text>
+  <rect x="540" y="398" width="52" height="40" fill="#FFFFFF" stroke="#4B2570" stroke-width="1.5" rx="3"/>
+  <rect x="605" y="398" width="52" height="40" fill="#FFFFFF" stroke="#4B2570" stroke-width="1.5" rx="3"/>
+  <rect x="670" y="398" width="40" height="40" fill="#FFFFFF" stroke="#4B2570" stroke-width="1.5" rx="3"/>
+  <text x="625" y="456" text-anchor="middle" font-size="11.5" fill="#4B2570">Rooms = your AWS resources (S3, EC2, DynamoDB…)</text>
+
+  <!-- Ground -->
+  <rect x="0" y="500" width="900" height="60" fill="#0F1621"/>
+  <text x="450" y="533" text-anchor="middle" font-size="13" fill="#9FB3C8">Nobody enters a room without a badge the guard has checked against the rulebook.</text>
+</svg>

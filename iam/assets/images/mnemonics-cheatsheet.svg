@@ -1,0 +1,79 @@
+<svg viewBox="0 0 960 720" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="0" y="0" width="960" height="720" fill="#232F3E"/>
+  <text x="480" y="46" text-anchor="middle" font-size="28" font-weight="700" fill="#FF9900">IAM Mnemonics — One Page</text>
+  <text x="480" y="72" text-anchor="middle" font-size="13" fill="#CBD5E1">The Secure Office Building, cover to cover</text>
+
+  <!-- Grid of cards -->
+  <g font-size="12.5">
+    <!-- Card 1 -->
+    <rect x="40" y="100" width="280" height="120" rx="12" fill="#2E3F55" stroke="#FF9900" stroke-width="1.5"/>
+    <text x="60" y="128" font-size="20">🔑</text>
+    <text x="95" y="128" font-size="14" font-weight="700" fill="#FFD873">Root</text>
+    <text x="60" y="150" fill="#E2E8F0">The master key.</text>
+    <text x="60" y="168" fill="#E2E8F0">Locked away, MFA-protected,</text>
+    <text x="60" y="186" fill="#E2E8F0">used for almost nothing.</text>
+
+    <!-- Card 2 -->
+    <rect x="340" y="100" width="280" height="120" rx="12" fill="#2E3F55" stroke="#146EB4" stroke-width="1.5"/>
+    <text x="360" y="128" font-size="20">🪪</text>
+    <text x="395" y="128" font-size="14" font-weight="700" fill="#8FD1FF">Users &amp; Groups</text>
+    <text x="360" y="150" fill="#E2E8F0">Permanent badge +</text>
+    <text x="360" y="168" fill="#E2E8F0">department template.</text>
+    <text x="360" y="186" fill="#E2E8F0">Groups aren't identities.</text>
+
+    <!-- Card 3 -->
+    <rect x="640" y="100" width="280" height="120" rx="12" fill="#2E3F55" stroke="#FFAC31" stroke-width="1.5"/>
+    <text x="660" y="128" font-size="20">🎫</text>
+    <text x="695" y="128" font-size="14" font-weight="700" fill="#FFD873">Roles</text>
+    <text x="660" y="150" fill="#E2E8F0">Self-expiring visitor pass.</text>
+    <text x="660" y="168" fill="#E2E8F0">Trust policy = sign-in sheet.</text>
+    <text x="660" y="186" fill="#E2E8F0">Permissions = what's on it.</text>
+
+    <!-- Card 4 -->
+    <rect x="40" y="240" width="280" height="120" rx="12" fill="#2E3F55" stroke="#59B200" stroke-width="1.5"/>
+    <text x="60" y="268" font-size="20">📜</text>
+    <text x="95" y="268" font-size="14" font-weight="700" fill="#B7EE9A">Policies</text>
+    <text x="60" y="290" fill="#E2E8F0">PARE: Principal, Action,</text>
+    <text x="60" y="308" fill="#E2E8F0">Resource, Effect.</text>
+    <text x="60" y="326" fill="#E2E8F0">Stapled to badge or taped to door.</text>
+
+    <!-- Card 5 -->
+    <rect x="340" y="240" width="280" height="120" rx="12" fill="#2E3F55" stroke="#D13212" stroke-width="1.5"/>
+    <text x="360" y="268" font-size="20">🕵️</text>
+    <text x="395" y="268" font-size="14" font-weight="700" fill="#FFB4A8">Evaluation</text>
+    <text x="360" y="290" fill="#E2E8F0">"DAN always wins":</text>
+    <text x="360" y="308" fill="#E2E8F0">Deny &gt; Allow &gt; Nothing (silence).</text>
+    <text x="360" y="326" fill="#E2E8F0">One "no" anywhere ends it.</text>
+
+    <!-- Card 6 -->
+    <rect x="640" y="240" width="280" height="120" rx="12" fill="#2E3F55" stroke="#8C4FD1" stroke-width="1.5"/>
+    <text x="660" y="268" font-size="20">🚧</text>
+    <text x="695" y="268" font-size="14" font-weight="700" fill="#DAB6FF">Boundaries &amp; SCPs</text>
+    <text x="660" y="290" fill="#E2E8F0">Ceilings, never grants.</text>
+    <text x="660" y="308" fill="#E2E8F0">Boundary = one badge's fence.</text>
+    <text x="660" y="326" fill="#E2E8F0">SCP = fire code, even for root.</text>
+
+    <!-- Card 7 -->
+    <rect x="40" y="380" width="280" height="120" rx="12" fill="#2E3F55" stroke="#146EB4" stroke-width="1.5"/>
+    <text x="60" y="408" font-size="20">🔐</text>
+    <text x="95" y="408" font-size="14" font-weight="700" fill="#8FD1FF">MFA</text>
+    <text x="60" y="430" fill="#E2E8F0">Know + Have = Go.</text>
+    <text x="60" y="448" fill="#E2E8F0">A second lock a stolen</text>
+    <text x="60" y="466" fill="#E2E8F0">badge photo can't open.</text>
+
+    <!-- Card 8 -->
+    <rect x="340" y="380" width="580" height="120" rx="12" fill="#2E3F55" stroke="#FF9900" stroke-width="1.5"/>
+    <text x="360" y="408" font-size="20">🛎️</text>
+    <text x="395" y="408" font-size="14" font-weight="700" fill="#FFD873">Federation &amp; STS</text>
+    <text x="360" y="430" fill="#E2E8F0">Don't print a badge for every visitor — check their outside ID</text>
+    <text x="360" y="448" fill="#E2E8F0">at the front desk (STS) and hand over a pass that expires</text>
+    <text x="360" y="466" fill="#E2E8F0">the moment they leave.</text>
+  </g>
+
+  <!-- Gate order strip -->
+  <rect x="40" y="530" width="880" height="150" rx="14" fill="#0F1621" stroke="#FF9900" stroke-width="2"/>
+  <text x="480" y="558" text-anchor="middle" font-size="15" font-weight="700" fill="#FF9900">The Gate Order — memorize top to bottom</text>
+  <text x="80" y="590" font-size="13" fill="#E2E8F0">1. SCP  →  2. Permission Boundary  →  3. Identity / Resource Policy  →  4. Session Policy</text>
+  <text x="80" y="622" font-size="13" fill="#FFB4A8" font-weight="700">An explicit Deny at ANY gate wins instantly.</text>
+  <text x="80" y="648" font-size="13" fill="#B7EE9A" font-weight="700">An Allow is required at every applicable gate, with no Deny anywhere, to succeed.</text>
+</svg>

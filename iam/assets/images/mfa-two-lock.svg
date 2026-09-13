@@ -1,0 +1,37 @@
+<svg viewBox="0 0 900 460" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="0" y="0" width="900" height="460" fill="#F7F9FC"/>
+  <text x="450" y="38" text-anchor="middle" font-size="24" font-weight="700" fill="#232F3E">MFA — the Second Lock on the Door</text>
+  <text x="450" y="60" text-anchor="middle" font-size="13" fill="#5A6B7D">Know + Have = Go</text>
+
+  <!-- Door -->
+  <rect x="330" y="100" width="240" height="300" rx="8" fill="#8B5A2B" stroke="#5C3A1A" stroke-width="4"/>
+  <rect x="350" y="120" width="200" height="260" rx="6" fill="#A9713F" stroke="#5C3A1A" stroke-width="2"/>
+
+  <!-- Lock 1: password -->
+  <circle cx="450" cy="220" r="34" fill="#146EB4" stroke="#0B4F8A" stroke-width="3"/>
+  <text x="450" y="228" text-anchor="middle" font-size="24" fill="#fff">🔑</text>
+  <text x="450" y="272" text-anchor="middle" font-size="12" font-weight="700" fill="#0B4F8A">Lock 1: Password</text>
+  <text x="450" y="288" text-anchor="middle" font-size="11" fill="#0B4F8A">something you KNOW</text>
+
+  <!-- Lock 2: MFA -->
+  <circle cx="450" cy="330" r="34" fill="#FF9900" stroke="#B36B00" stroke-width="3"/>
+  <text x="450" y="338" text-anchor="middle" font-size="24" fill="#fff">📱</text>
+  <text x="450" y="382" text-anchor="middle" font-size="12" font-weight="700" fill="#B36B00">Lock 2: MFA device</text>
+  <text x="450" y="398" text-anchor="middle" font-size="11" fill="#B36B00">something you HAVE</text>
+
+  <!-- Attacker with stolen password -->
+  <text x="130" y="230" font-size="34">🕵️‍♂️</text>
+  <text x="130" y="270" text-anchor="middle" font-size="11" fill="#8A0000">Attacker with</text>
+  <text x="130" y="284" text-anchor="middle" font-size="11" fill="#8A0000">stolen password</text>
+  <line x1="170" y1="230" x2="320" y2="230" stroke="#D13212" stroke-width="2" stroke-dasharray="6,4"/>
+  <text x="245" y="216" text-anchor="middle" font-size="18" fill="#D13212">✗</text>
+  <text x="245" y="250" text-anchor="middle" font-size="10.5" fill="#8A0000">stops at Lock 2</text>
+
+  <!-- Real user with both -->
+  <text x="770" y="330" font-size="34">🧑‍💼</text>
+  <text x="770" y="370" text-anchor="middle" font-size="11" fill="#1D6B00">Real user with</text>
+  <text x="770" y="384" text-anchor="middle" font-size="11" fill="#1D6B00">password + device</text>
+  <line x1="730" y1="330" x2="590" y2="330" stroke="#1D6B00" stroke-width="2"/>
+  <text x="660" y="316" text-anchor="middle" font-size="18" fill="#1D6B00">✓</text>
+  <text x="660" y="350" text-anchor="middle" font-size="10.5" fill="#1D6B00">opens both locks</text>
+</svg>
