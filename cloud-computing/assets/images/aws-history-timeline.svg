@@ -1,0 +1,57 @@
+<svg viewBox="0 0 980 460" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="0" y="0" width="980" height="460" fill="#F7F9FC"/>
+  <text x="490" y="38" text-anchor="middle" font-size="24" font-weight="700" fill="#232F3E">A Brief History of AWS</text>
+  <text x="490" y="60" text-anchor="middle" font-size="13" fill="#5A6B7D">From a tangled internal system to the world's largest cloud</text>
+
+  <line x1="60" y1="220" x2="920" y2="220" stroke="#232F3E" stroke-width="3"/>
+
+  <!-- 1994 -->
+  <circle cx="100" cy="220" r="10" fill="#146EB4"/>
+  <rect x="40" y="240" width="120" height="70" rx="8" fill="#DCEEFB" stroke="#146EB4" stroke-width="2"/>
+  <text x="100" y="262" text-anchor="middle" font-size="12" font-weight="700" fill="#0B4F8A">1994</text>
+  <text x="100" y="280" text-anchor="middle" font-size="10" fill="#0B4F8A">Amazon founded</text>
+  <text x="100" y="294" text-anchor="middle" font-size="10" fill="#0B4F8A">as a bookstore</text>
+
+  <!-- 2000 -->
+  <circle cx="280" cy="220" r="10" fill="#FF9900"/>
+  <rect x="220" y="120" width="130" height="80" rx="8" fill="#FDE9CF" stroke="#FF9900" stroke-width="2"/>
+  <text x="285" y="142" text-anchor="middle" font-size="12" font-weight="700" fill="#7A4A00">~2000</text>
+  <text x="285" y="160" text-anchor="middle" font-size="10" fill="#7A4A00">Merchant.com effort</text>
+  <text x="285" y="174" text-anchor="middle" font-size="10" fill="#7A4A00">reveals tangled</text>
+  <text x="285" y="188" text-anchor="middle" font-size="10" fill="#7A4A00">internal systems</text>
+
+  <!-- 2003 -->
+  <circle cx="440" cy="220" r="10" fill="#FF9900"/>
+  <rect x="380" y="240" width="130" height="80" rx="8" fill="#FDE9CF" stroke="#FF9900" stroke-width="2"/>
+  <text x="445" y="262" text-anchor="middle" font-size="12" font-weight="700" fill="#7A4A00">~2003</text>
+  <text x="445" y="280" text-anchor="middle" font-size="10" fill="#7A4A00">Scalable infra</text>
+  <text x="445" y="294" text-anchor="middle" font-size="10" fill="#7A4A00">recognized as a</text>
+  <text x="445" y="308" text-anchor="middle" font-size="10" fill="#7A4A00">sellable strength</text>
+
+  <!-- 2006 -->
+  <circle cx="600" cy="220" r="12" fill="#D13212"/>
+  <rect x="530" y="120" width="140" height="85" rx="8" fill="#F9D5D5" stroke="#D13212" stroke-width="2.5"/>
+  <text x="600" y="142" text-anchor="middle" font-size="13" font-weight="700" fill="#8A0000">2006</text>
+  <text x="600" y="160" text-anchor="middle" font-size="10.5" fill="#8A0000">EC2 + S3 + SQS</text>
+  <text x="600" y="174" text-anchor="middle" font-size="10.5" fill="#8A0000">launch — the AWS</text>
+  <text x="600" y="188" text-anchor="middle" font-size="10.5" fill="#8A0000">we know today</text>
+
+  <!-- 2008 -->
+  <circle cx="740" cy="220" r="10" fill="#59B200"/>
+  <rect x="680" y="240" width="130" height="70" rx="8" fill="#E7F6E5" stroke="#59B200" stroke-width="2"/>
+  <text x="745" y="262" text-anchor="middle" font-size="12" font-weight="700" fill="#2E5C00">Late 2008</text>
+  <text x="745" y="280" text-anchor="middle" font-size="10" fill="#2E5C00">EC2 exits beta —</text>
+  <text x="745" y="294" text-anchor="middle" font-size="10" fill="#2E5C00">backed by an SLA</text>
+
+  <!-- Today -->
+  <circle cx="880" cy="220" r="10" fill="#8C4FD1"/>
+  <rect x="820" y="120" width="130" height="80" rx="8" fill="#F3E9FB" stroke="#8C4FD1" stroke-width="2"/>
+  <text x="885" y="142" text-anchor="middle" font-size="12" font-weight="700" fill="#4B2570">2010 →</text>
+  <text x="885" y="160" text-anchor="middle" font-size="10" fill="#4B2570">Azure, Google, and</text>
+  <text x="885" y="174" text-anchor="middle" font-size="10" fill="#4B2570">others enter, but</text>
+  <text x="885" y="188" text-anchor="middle" font-size="10" fill="#4B2570">AWS stays largest</text>
+
+  <rect x="60" y="360" width="860" height="70" rx="10" fill="#0F1621" stroke="#FF9900"/>
+  <text x="490" y="390" text-anchor="middle" font-size="13" font-weight="700" fill="#FF9900">"AWS wasn't built as a product — it was Amazon's own scaling</text>
+  <text x="490" y="412" text-anchor="middle" font-size="13" font-weight="700" fill="#FF9900">problem, solved so well it became something they could rent out."</text>
+</svg>

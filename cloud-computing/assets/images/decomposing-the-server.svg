@@ -1,0 +1,54 @@
+<svg viewBox="0 0 980 480" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="0" y="0" width="980" height="480" fill="#F7F9FC"/>
+  <text x="490" y="38" text-anchor="middle" font-size="24" font-weight="700" fill="#232F3E">One Overworked Room → Three Specialized Rooms</text>
+
+  <!-- Before: one box -->
+  <text x="150" y="80" text-anchor="middle" font-size="14" font-weight="700" fill="#8A0000">Before</text>
+  <rect x="60" y="100" width="180" height="220" rx="12" fill="#F9D5D5" stroke="#D13212" stroke-width="2.5"/>
+  <text x="150" y="135" text-anchor="middle" font-size="30">🖥️</text>
+  <text x="150" y="165" text-anchor="middle" font-size="11" font-weight="700" fill="#8A0000">One EC2 instance</text>
+  <text x="150" y="190" text-anchor="middle" font-size="10" fill="#8A0000">runs the app code</text>
+  <text x="150" y="210" text-anchor="middle" font-size="10" fill="#8A0000">AND the database</text>
+  <text x="150" y="230" text-anchor="middle" font-size="10" fill="#8A0000">AND stores images</text>
+  <text x="150" y="260" text-anchor="middle" font-size="9.5" fill="#8A0000" font-style="italic">one failure loses</text>
+  <text x="150" y="274" text-anchor="middle" font-size="9.5" fill="#8A0000" font-style="italic">everything at once</text>
+
+  <!-- Arrow -->
+  <line x1="260" y1="210" x2="340" y2="210" stroke="#232F3E" stroke-width="3" marker-end="url(#da)"/>
+  <text x="300" y="195" text-anchor="middle" font-size="11" fill="#232F3E">split</text>
+  <defs>
+    <marker id="da" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 z" fill="#232F3E"/>
+    </marker>
+  </defs>
+
+  <!-- After: three boxes -->
+  <text x="700" y="80" text-anchor="middle" font-size="14" font-weight="700" fill="#1D6B00">After</text>
+
+  <rect x="360" y="100" width="180" height="220" rx="12" fill="#DCEEFB" stroke="#146EB4" stroke-width="2"/>
+  <text x="450" y="135" text-anchor="middle" font-size="30">⚙️</text>
+  <text x="450" y="165" text-anchor="middle" font-size="11" font-weight="700" fill="#0B4F8A">EC2</text>
+  <text x="450" y="185" text-anchor="middle" font-size="10" fill="#0B4F8A">compute only</text>
+  <text x="450" y="205" text-anchor="middle" font-size="10" fill="#0B4F8A">disposable —</text>
+  <text x="450" y="220" text-anchor="middle" font-size="10" fill="#0B4F8A">holds nothing precious</text>
+  <text x="450" y="250" text-anchor="middle" font-size="9.5" fill="#0B4F8A" font-style="italic">create/destroy</text>
+  <text x="450" y="264" text-anchor="middle" font-size="9.5" fill="#0B4F8A" font-style="italic">copies freely</text>
+
+  <rect x="560" y="100" width="180" height="220" rx="12" fill="#FDE9CF" stroke="#FF9900" stroke-width="2"/>
+  <text x="650" y="135" text-anchor="middle" font-size="30">🗄️</text>
+  <text x="650" y="165" text-anchor="middle" font-size="11" font-weight="700" fill="#7A4A00">RDS</text>
+  <text x="650" y="185" text-anchor="middle" font-size="10" fill="#7A4A00">managed database</text>
+  <text x="650" y="205" text-anchor="middle" font-size="10" fill="#7A4A00">AWS patches,</text>
+  <text x="650" y="220" text-anchor="middle" font-size="10" fill="#7A4A00">backs up, fails over</text>
+
+  <rect x="760" y="100" width="180" height="220" rx="12" fill="#E7F6E5" stroke="#59B200" stroke-width="2"/>
+  <text x="850" y="135" text-anchor="middle" font-size="30">📦</text>
+  <text x="850" y="165" text-anchor="middle" font-size="11" font-weight="700" fill="#2E5C00">S3</text>
+  <text x="850" y="185" text-anchor="middle" font-size="10" fill="#2E5C00">object storage</text>
+  <text x="850" y="205" text-anchor="middle" font-size="10" fill="#2E5C00">files live independently</text>
+  <text x="850" y="220" text-anchor="middle" font-size="10" fill="#2E5C00">of any one server</text>
+
+  <rect x="60" y="360" width="880" height="70" rx="10" fill="#0F1621" stroke="#FF9900"/>
+  <text x="500" y="390" text-anchor="middle" font-size="13" font-weight="700" fill="#FF9900">"Stop making the front desk clerk also be the accountant</text>
+  <text x="500" y="412" text-anchor="middle" font-size="13" font-weight="700" fill="#FF9900">and the warehouse manager — give each job its own room."</text>
+</svg>

@@ -1,0 +1,48 @@
+<svg viewBox="0 0 980 480" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="0" y="0" width="980" height="480" fill="#F7F9FC"/>
+  <text x="490" y="38" text-anchor="middle" font-size="24" font-weight="700" fill="#232F3E">Four Places for Data to Live</text>
+
+  <!-- Instance Store -->
+  <rect x="40" y="80" width="215" height="260" rx="12" fill="#F9D5D5" stroke="#D13212" stroke-width="2"/>
+  <text x="147" y="112" text-anchor="middle" font-size="30">🪑</text>
+  <text x="147" y="140" text-anchor="middle" font-size="13" font-weight="700" fill="#8A0000">Instance Store</text>
+  <text x="147" y="165" text-anchor="middle" font-size="10.5" fill="#8A0000">Furniture that came</text>
+  <text x="147" y="180" text-anchor="middle" font-size="10.5" fill="#8A0000">with the rented room</text>
+  <rect x="60" y="200" width="175" height="60" rx="6" fill="#FFFFFF" stroke="#8A0000"/>
+  <text x="147" y="225" text-anchor="middle" font-size="9.5" fill="#8A0000" font-weight="700">Gone when the instance</text>
+  <text x="147" y="240" text-anchor="middle" font-size="9.5" fill="#8A0000" font-weight="700">stops or terminates</text>
+
+  <!-- EBS -->
+  <rect x="270" y="80" width="215" height="260" rx="12" fill="#DCEEFB" stroke="#146EB4" stroke-width="2"/>
+  <text x="377" y="112" text-anchor="middle" font-size="30">🧳</text>
+  <text x="377" y="140" text-anchor="middle" font-size="13" font-weight="700" fill="#0B4F8A">EBS</text>
+  <text x="377" y="165" text-anchor="middle" font-size="10.5" fill="#0B4F8A">A locker you wheel</text>
+  <text x="377" y="180" text-anchor="middle" font-size="10.5" fill="#0B4F8A">to a different room</text>
+  <rect x="290" y="200" width="175" height="60" rx="6" fill="#FFFFFF" stroke="#0B4F8A"/>
+  <text x="377" y="225" text-anchor="middle" font-size="9.5" fill="#0B4F8A" font-weight="700">Persists independently,</text>
+  <text x="377" y="240" text-anchor="middle" font-size="9.5" fill="#0B4F8A" font-weight="700">one instance at a time</text>
+
+  <!-- EFS -->
+  <rect x="500" y="80" width="215" height="260" rx="12" fill="#FDE9CF" stroke="#FF9900" stroke-width="2"/>
+  <text x="607" y="112" text-anchor="middle" font-size="30">🗂️</text>
+  <text x="607" y="140" text-anchor="middle" font-size="13" font-weight="700" fill="#7A4A00">EFS</text>
+  <text x="607" y="165" text-anchor="middle" font-size="10.5" fill="#7A4A00">A shared filing room</text>
+  <text x="607" y="180" text-anchor="middle" font-size="10.5" fill="#7A4A00">the whole floor uses</text>
+  <rect x="520" y="200" width="175" height="60" rx="6" fill="#FFFFFF" stroke="#7A4A00"/>
+  <text x="607" y="225" text-anchor="middle" font-size="9.5" fill="#7A4A00" font-weight="700">Many instances read/write</text>
+  <text x="607" y="240" text-anchor="middle" font-size="9.5" fill="#7A4A00" font-weight="700">it at the same time</text>
+
+  <!-- S3 -->
+  <rect x="730" y="80" width="215" height="260" rx="12" fill="#E7F6E5" stroke="#59B200" stroke-width="2"/>
+  <text x="837" y="112" text-anchor="middle" font-size="30">🏭</text>
+  <text x="837" y="140" text-anchor="middle" font-size="13" font-weight="700" fill="#2E5C00">S3</text>
+  <text x="837" y="165" text-anchor="middle" font-size="10.5" fill="#2E5C00">A storage facility</text>
+  <text x="837" y="180" text-anchor="middle" font-size="10.5" fill="#2E5C00">clear across town</text>
+  <rect x="750" y="200" width="175" height="60" rx="6" fill="#FFFFFF" stroke="#2E5C00"/>
+  <text x="837" y="225" text-anchor="middle" font-size="9.5" fill="#2E5C00" font-weight="700">Fully decoupled — reached</text>
+  <text x="837" y="240" text-anchor="middle" font-size="9.5" fill="#2E5C00" font-weight="700">over the network as objects</text>
+
+  <rect x="40" y="380" width="905" height="70" rx="10" fill="#0F1621" stroke="#FF9900"/>
+  <text x="490" y="408" text-anchor="middle" font-size="12.5" font-weight="700" fill="#FF9900">"Instance Store vanishes when you move out. EBS is a locker you wheel to a new room.</text>
+  <text x="490" y="428" text-anchor="middle" font-size="12.5" font-weight="700" fill="#FF9900">EFS is a filing room the floor shares. S3 never even knew which room you were in."</text>
+</svg>

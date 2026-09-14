@@ -33,8 +33,10 @@ Running a website or application the traditional way is like **owning a house** 
 ## Read in this order
 
 1. [Why the Cloud, and Why AWS?](why-cloud-and-aws.md) — the case for moving, and why AWS is the reference point worth learning first
-2. [Service Models: IaaS, PaaS & Serverless](service-models-iaas-paas-serverless.md) — how much of the "apartment" you furnish yourself, and the migration path most companies actually take
-3. [Glossary](glossary.md) — every term, one line each
+2. [A Brief History of AWS](history-of-aws.md) — how AWS grew out of Amazon's own scaling problem
+3. [Service Models: IaaS, PaaS & Serverless](service-models-iaas-paas-serverless.md) — how much of the "apartment" you furnish yourself, and the migration path most companies actually take
+4. [Moving to Cloud Storage](moving-to-cloud-storage.md) — splitting one overworked server into EC2, RDS, and S3, and the four places data can actually live
+5. [Glossary](glossary.md) — every term, one line each
 
 ## Where this fits in the bundle
 
