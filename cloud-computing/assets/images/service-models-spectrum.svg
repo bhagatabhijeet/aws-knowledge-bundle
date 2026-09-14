@@ -1,0 +1,53 @@
+<svg viewBox="0 0 940 480" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="0" y="0" width="940" height="480" fill="#F7F9FC"/>
+  <text x="470" y="38" text-anchor="middle" font-size="24" font-weight="700" fill="#232F3E">IaaS → PaaS → Serverless</text>
+  <text x="470" y="60" text-anchor="middle" font-size="13" fill="#5A6B7D">How much of the apartment you furnish yourself</text>
+
+  <!-- Three columns -->
+  <!-- IaaS -->
+  <rect x="50" y="100" width="260" height="300" rx="14" fill="#DCEEFB" stroke="#146EB4" stroke-width="2"/>
+  <text x="180" y="130" text-anchor="middle" font-size="16" font-weight="700" fill="#0B4F8A">IaaS</text>
+  <text x="180" y="150" text-anchor="middle" font-size="11" fill="#0B4F8A">Bare apartment unit</text>
+  <!-- empty room icon -->
+  <rect x="130" y="170" width="100" height="80" fill="#FFFFFF" stroke="#0B4F8A" stroke-width="2"/>
+  <text x="180" y="266" text-anchor="middle" font-size="11" fill="#0B4F8A" font-weight="600">You bring:</text>
+  <text x="180" y="284" text-anchor="middle" font-size="10.5" fill="#0B4F8A">OS, runtime, app, data</text>
+  <text x="180" y="310" text-anchor="middle" font-size="11" fill="#0B4F8A" font-weight="600">Building provides:</text>
+  <text x="180" y="328" text-anchor="middle" font-size="10.5" fill="#0B4F8A">power, network, hardware</text>
+  <text x="180" y="370" text-anchor="middle" font-size="10.5" fill="#7A0000" font-style="italic">Closest to traditional hosting —</text>
+  <text x="180" y="386" text-anchor="middle" font-size="10.5" fill="#7A0000" font-style="italic">easiest first migration step</text>
+
+  <!-- PaaS -->
+  <rect x="340" y="100" width="260" height="300" rx="14" fill="#FDE9CF" stroke="#FF9900" stroke-width="2"/>
+  <text x="470" y="130" text-anchor="middle" font-size="16" font-weight="700" fill="#7A4A00">PaaS</text>
+  <text x="470" y="150" text-anchor="middle" font-size="11" fill="#7A4A00">Furnished, serviced unit</text>
+  <rect x="420" y="170" width="100" height="80" fill="#FFFFFF" stroke="#7A4A00" stroke-width="2"/>
+  <rect x="430" y="200" width="30" height="20" fill="#FDE9CF" stroke="#7A4A00"/>
+  <rect x="470" y="200" width="30" height="20" fill="#FDE9CF" stroke="#7A4A00"/>
+  <text x="470" y="266" text-anchor="middle" font-size="11" fill="#7A4A00" font-weight="600">You bring:</text>
+  <text x="470" y="284" text-anchor="middle" font-size="10.5" fill="#7A4A00">application code, data</text>
+  <text x="470" y="310" text-anchor="middle" font-size="11" fill="#7A4A00" font-weight="600">Building provides:</text>
+  <text x="470" y="328" text-anchor="middle" font-size="10.5" fill="#7A4A00">OS, runtime, patching</text>
+
+  <!-- Serverless -->
+  <rect x="630" y="100" width="260" height="300" rx="14" fill="#E7F6E5" stroke="#59B200" stroke-width="2"/>
+  <text x="760" y="130" text-anchor="middle" font-size="16" font-weight="700" fill="#2E5C00">Serverless</text>
+  <text x="760" y="150" text-anchor="middle" font-size="11" fill="#2E5C00">Shared room, booked by the hour</text>
+  <circle cx="760" cy="210" r="40" fill="#FFFFFF" stroke="#2E5C00" stroke-width="2"/>
+  <text x="760" y="220" text-anchor="middle" font-size="26">λ</text>
+  <text x="760" y="266" text-anchor="middle" font-size="11" fill="#2E5C00" font-weight="600">You bring:</text>
+  <text x="760" y="284" text-anchor="middle" font-size="10.5" fill="#2E5C00">just the function/code</text>
+  <text x="760" y="310" text-anchor="middle" font-size="11" fill="#2E5C00" font-weight="600">Building provides:</text>
+  <text x="760" y="328" text-anchor="middle" font-size="10.5" fill="#2E5C00">everything else, incl. scaling</text>
+
+  <!-- Arrow across -->
+  <line x1="310" y1="420" x2="630" y2="420" stroke="#232F3E" stroke-width="2" marker-end="url(#a6)"/>
+  <text x="470" y="410" text-anchor="middle" font-size="11" fill="#232F3E">less to manage, more abstraction</text>
+  <defs>
+    <marker id="a6" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 z" fill="#232F3E"/>
+    </marker>
+  </defs>
+
+  <text x="470" y="455" text-anchor="middle" font-size="12.5" fill="#232F3E">"IaaS: you bring the furniture. PaaS: it's already there. Serverless: you don't even keep the room."</text>
+</svg>
