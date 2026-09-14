@@ -16,8 +16,9 @@ A growing [Open Knowledge Format](https://github.com/GoogleCloudPlatform/knowled
 
 Every service gets its own folder, its own running analogy, and its own set of hand-built diagrams so the mental model sticks long after you close the tab.
 
-## Services covered
+## Topics covered
 
+* [cloud-computing/](cloud-computing/index.md) — Cloud computing fundamentals, taught through **Moving Day**: leaving a fixed house (on-premises/traditional hosting) for an elastic apartment complex (the cloud), and the IaaS/PaaS/serverless spectrum. Start here if you're new to the cloud.
 * [iam/](iam/index.md) — AWS Identity and Access Management, taught through **The Secure Office Building** analogy: root keys, employee badges, visitor passes, rulebooks, and the security guard who enforces them all.
 
-More services will be added over time — see [log.md](log.md) for the history of this bundle.
+More topics and services will be added over time — see [log.md](log.md) for the history of this bundle.
