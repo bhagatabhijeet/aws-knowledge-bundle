@@ -18,7 +18,8 @@ Every service gets its own folder, its own running analogy, and its own set of h
 
 ## Topics covered
 
-* [cloud-computing/](cloud-computing/index.md) — Cloud computing fundamentals, taught through **Moving Day**: leaving a fixed house (on-premises/traditional hosting) for an elastic apartment complex (the cloud), and the IaaS/PaaS/serverless spectrum. Start here if you're new to the cloud.
+* [cloud-computing/](cloud-computing/index.md) — Cloud computing fundamentals, taught through **Moving Day**: leaving a fixed house (on-premises/traditional hosting) for an elastic apartment complex (the cloud), a brief history of AWS, the IaaS/PaaS/serverless spectrum, and decomposing one server into EC2/RDS/S3. Start here if you're new to the cloud.
 * [iam/](iam/index.md) — AWS Identity and Access Management, taught through **The Secure Office Building** analogy: root keys, employee badges, visitor passes, rulebooks, and the security guard who enforces them all.
+* [s3/](s3/index.md) — Amazon S3, taught through **The Self-Storage Facility** analogy: rented units, boxes on shelves, and the shelf you pick trading price against retrieval speed.
 
 More topics and services will be added over time — see [log.md](log.md) for the history of this bundle.

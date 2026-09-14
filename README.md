@@ -22,7 +22,8 @@ Taught through **Moving Day**: running things the traditional way is owning (or 
 
 | | |
 |---|---|
-| [Why the Cloud, and Why AWS?](cloud-computing/why-cloud-and-aws.md) | [Service Models: IaaS, PaaS & Serverless](cloud-computing/service-models-iaas-paas-serverless.md) |
+| [Why the Cloud, and Why AWS?](cloud-computing/why-cloud-and-aws.md) | [A Brief History of AWS](cloud-computing/history-of-aws.md) |
+| [Service Models: IaaS, PaaS & Serverless](cloud-computing/service-models-iaas-paas-serverless.md) | [Moving to Cloud Storage](cloud-computing/moving-to-cloud-storage.md) |
 | [Glossary](cloud-computing/glossary.md) | |
 
 **New to the cloud? Start here before any service-specific folder below.**
@@ -43,6 +44,25 @@ Taught through **The Secure Office Building**: your AWS account is a building, t
 **The one sentence that unlocks the entire evaluation model:**
 > *"Silence means no, a sign saying yes overrides silence, but a sign saying no overrides everything."*
 
+### [`s3/`](s3/index.md) — Amazon S3 (Simple Storage Service)
+
+Taught through **The Self-Storage Facility**: S3 stands for Simple Storage Service — three S's — so think of it as your own Self-Storage Service. Buckets are rented units, objects are boxes on a shelf, and the shelf you pick trades price against how fast you can get the box back.
+
+![The S3 Self-Storage Facility](s3/assets/images/s3-warehouse-overview.svg)
+
+| | | |
+|---|---|---|
+| [What is S3?](s3/what-is-s3.md) | [Buckets & Objects](s3/buckets-and-objects.md) | [Storage Classes](s3/storage-classes.md) |
+| [Versioning](s3/versioning.md) | [Lifecycle Management](s3/lifecycle-management.md) | [Replication](s3/replication.md) |
+| [Security & Access Control](s3/security-and-access-control.md) | [Access Points](s3/access-points.md) | [Encryption](s3/encryption.md) |
+| [Sharing & Presigned URLs](s3/sharing-and-presigned-urls.md) | [Static Website Hosting](s3/static-website-hosting.md) | [Performance & Transfer](s3/performance-and-transfer.md) |
+| [Consistency Model](s3/consistency-model.md) | [Data Processing & Notifications](s3/data-processing-and-notifications.md) | [Object Lock & Compliance](s3/object-lock-and-compliance.md) |
+| [Monitoring & Cost Optimization](s3/monitoring-and-cost-optimization.md) | [Best Practices](s3/best-practices.md) | [Mnemonics Cheat Sheet](s3/mnemonics-cheatsheet.md) |
+| [Glossary](s3/glossary.md) | | |
+
+**The one sentence that unlocks storage-class selection:**
+> *"The closer to the door, the more it costs to store — and the less it costs to grab."*
+
 More services are on the way — each one gets its own folder, its own analogy, and its own set of diagrams. See [log.md](log.md) for the bundle's history.
 
 ## How this bundle is organized
@@ -53,7 +73,8 @@ This repository follows the [Open Knowledge Format (OKF) v0.2](https://github.co
 ├── index.md              # bundle-root index (OKF)
 ├── log.md                # bundle changelog
 ├── cloud-computing/      # fundamentals — start here
-└── iam/                  # one folder per AWS service/topic
+├── iam/                  # one folder per AWS service/topic
+└── s3/                   # ...
     ├── index.md           # folder index — start here
     ├── log.md             # folder changelog
     ├── *.md               # one concept per file, YAML frontmatter + sources
@@ -66,4 +87,5 @@ Every concept doc cites its official AWS source in a `sources:` frontmatter bloc
 
 👉 **New to the cloud entirely?** Begin at [`cloud-computing/index.md`](cloud-computing/index.md).
 👉 **New to IAM?** Begin at [`iam/index.md`](iam/index.md).
-👉 **Cramming before an exam or interview?** Jump straight to the [IAM Mnemonics Cheat Sheet](iam/mnemonics-cheatsheet.md).
+👉 **New to S3?** Begin at [`s3/index.md`](s3/index.md).
+👉 **Cramming before an exam or interview?** Jump to the [IAM](iam/mnemonics-cheatsheet.md) or [S3](s3/mnemonics-cheatsheet.md) Mnemonics Cheat Sheet.
