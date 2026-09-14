@@ -1,0 +1,8 @@
+# Source video/audio files used to derive KB content — never committed
+*.mp4
+*.mov
+*.mkv
+*.avi
+*.mp3
+*.wav
+*.m4a
