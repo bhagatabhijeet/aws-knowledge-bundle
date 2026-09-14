@@ -1,0 +1,46 @@
+<svg viewBox="0 0 940 500" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="0" y="0" width="940" height="500" fill="#F7F9FC"/>
+  <text x="470" y="38" text-anchor="middle" font-size="24" font-weight="700" fill="#232F3E">Access Control — Four Doors, One Master Switch</text>
+
+  <!-- Master switch outer -->
+  <rect x="60" y="80" width="820" height="360" rx="18" fill="#F9D5D5" stroke="#D13212" stroke-width="3"/>
+  <text x="90" y="110" font-size="14" font-weight="700" fill="#8A0000">🔴 Block Public Access — the master switch (wins over everything inside)</text>
+
+  <!-- IAM policy -->
+  <rect x="100" y="140" width="180" height="150" rx="12" fill="#DCEEFB" stroke="#146EB4" stroke-width="2"/>
+  <text x="190" y="168" text-anchor="middle" font-size="13" font-weight="700" fill="#0B4F8A">🪪 IAM Policy</text>
+  <text x="190" y="190" text-anchor="middle" font-size="10.5" fill="#0B4F8A">stapled to the</text>
+  <text x="190" y="204" text-anchor="middle" font-size="10.5" fill="#0B4F8A">employee's badge</text>
+  <text x="190" y="240" text-anchor="middle" font-size="10" fill="#0B4F8A" font-style="italic">Attached to a</text>
+  <text x="190" y="254" text-anchor="middle" font-size="10" fill="#0B4F8A" font-style="italic">user / role / group</text>
+
+  <!-- Bucket policy -->
+  <rect x="310" y="140" width="180" height="150" rx="12" fill="#FDE9CF" stroke="#FF9900" stroke-width="2"/>
+  <text x="400" y="168" text-anchor="middle" font-size="13" font-weight="700" fill="#7A4A00">📜 Bucket Policy</text>
+  <text x="400" y="190" text-anchor="middle" font-size="10.5" fill="#7A4A00">the sign taped</text>
+  <text x="400" y="204" text-anchor="middle" font-size="10.5" fill="#7A4A00">to the unit's door</text>
+  <text x="400" y="240" text-anchor="middle" font-size="10" fill="#7A4A00" font-style="italic">Resource-based —</text>
+  <text x="400" y="254" text-anchor="middle" font-size="10" fill="#7A4A00" font-style="italic">names a Principal</text>
+
+  <!-- ACL -->
+  <rect x="520" y="140" width="180" height="150" rx="12" fill="#EDEFF3" stroke="#8A97A8" stroke-width="2" stroke-dasharray="6,4"/>
+  <text x="610" y="168" text-anchor="middle" font-size="13" font-weight="700" fill="#4A5568">📋 ACL (legacy)</text>
+  <text x="610" y="190" text-anchor="middle" font-size="10.5" fill="#4A5568">the old-fashioned</text>
+  <text x="610" y="204" text-anchor="middle" font-size="10.5" fill="#4A5568">guest list</text>
+  <text x="610" y="240" text-anchor="middle" font-size="10" fill="#4A5568" font-style="italic">AWS recommends</text>
+  <text x="610" y="254" text-anchor="middle" font-size="10" fill="#4A5568" font-style="italic">disabling these</text>
+
+  <!-- Access Point -->
+  <rect x="730" y="140" width="120" height="150" rx="12" fill="#E7F6E5" stroke="#59B200" stroke-width="2"/>
+  <text x="790" y="168" text-anchor="middle" font-size="12" font-weight="700" fill="#2E5C00">🚪 Access</text>
+  <text x="790" y="184" text-anchor="middle" font-size="12" font-weight="700" fill="#2E5C00">Point</text>
+  <text x="790" y="210" text-anchor="middle" font-size="9.5" fill="#2E5C00">private door,</text>
+  <text x="790" y="223" text-anchor="middle" font-size="9.5" fill="#2E5C00">own policy</text>
+
+  <!-- The bucket -->
+  <rect x="330" y="330" width="280" height="80" rx="10" fill="#FFFFFF" stroke="#232F3E" stroke-width="2"/>
+  <text x="470" y="365" text-anchor="middle" font-size="14" font-weight="700" fill="#232F3E">🏠 The Bucket / Object</text>
+  <text x="470" y="385" text-anchor="middle" font-size="10.5" fill="#5A6B7D">private by default — locked until opened</text>
+
+  <text x="470" y="465" text-anchor="middle" font-size="12.5" fill="#232F3E">"Badge, sign, guest list, private door — and the master switch always wins."</text>
+</svg>

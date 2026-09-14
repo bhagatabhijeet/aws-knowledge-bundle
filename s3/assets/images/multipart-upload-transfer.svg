@@ -1,0 +1,62 @@
+<svg viewBox="0 0 940 460" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="0" y="0" width="940" height="460" fill="#F7F9FC"/>
+  <text x="470" y="38" text-anchor="middle" font-size="24" font-weight="700" fill="#232F3E">Multipart Upload &amp; Transfer Acceleration</text>
+
+  <!-- Multipart section -->
+  <text x="230" y="80" text-anchor="middle" font-size="14" font-weight="700" fill="#0B4F8A">📦 Multipart Upload</text>
+  <rect x="60" y="100" width="60" height="60" fill="#DCEEFB" stroke="#146EB4" stroke-width="2" rx="6"/>
+  <text x="90" y="135" text-anchor="middle" font-size="10" fill="#0B4F8A">Part 1</text>
+  <rect x="140" y="100" width="60" height="60" fill="#DCEEFB" stroke="#146EB4" stroke-width="2" rx="6"/>
+  <text x="170" y="135" text-anchor="middle" font-size="10" fill="#0B4F8A">Part 2</text>
+  <rect x="220" y="100" width="60" height="60" fill="#DCEEFB" stroke="#146EB4" stroke-width="2" rx="6"/>
+  <text x="250" y="135" text-anchor="middle" font-size="10" fill="#0B4F8A">Part 3</text>
+  <rect x="300" y="100" width="60" height="60" fill="#DCEEFB" stroke="#146EB4" stroke-width="2" rx="6"/>
+  <text x="330" y="135" text-anchor="middle" font-size="10" fill="#0B4F8A">Part 4</text>
+  <text x="210" y="185" text-anchor="middle" font-size="10.5" fill="#0B4F8A">uploaded in parallel, reassembled inside</text>
+
+  <line x1="90" y1="170" x2="90" y2="200" stroke="#146EB4" stroke-width="2"/>
+  <line x1="170" y1="170" x2="170" y2="200" stroke="#146EB4" stroke-width="2"/>
+  <line x1="250" y1="170" x2="250" y2="200" stroke="#146EB4" stroke-width="2"/>
+  <line x1="330" y1="170" x2="330" y2="200" stroke="#146EB4" stroke-width="2"/>
+  <line x1="90" y1="200" x2="330" y2="200" stroke="#146EB4" stroke-width="2"/>
+  <line x1="210" y1="200" x2="210" y2="225" stroke="#146EB4" stroke-width="2" marker-end="url(#mu)"/>
+
+  <rect x="130" y="230" width="160" height="55" rx="8" fill="#146EB4"/>
+  <text x="210" y="263" text-anchor="middle" font-size="12" fill="#FFFFFF" font-weight="700">📦 Complete Object</text>
+
+  <defs>
+    <marker id="mu" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 z" fill="#146EB4"/>
+    </marker>
+  </defs>
+
+  <!-- Transfer acceleration section -->
+  <text x="720" y="80" text-anchor="middle" font-size="14" font-weight="700" fill="#7A4A00">🛣️ Transfer Acceleration</text>
+  <text x="580" y="130" font-size="26">📤</text>
+  <text x="580" y="160" text-anchor="middle" font-size="9.5" fill="#7A4A00">uploader,</text>
+  <text x="580" y="172" text-anchor="middle" font-size="9.5" fill="#7A4A00">far from bucket Region</text>
+
+  <line x1="610" y1="140" x2="680" y2="140" stroke="#FF9900" stroke-width="2" marker-end="url(#mu2)"/>
+  <rect x="685" y="115" width="90" height="50" rx="8" fill="#FDE9CF" stroke="#FF9900" stroke-width="2"/>
+  <text x="730" y="135" text-anchor="middle" font-size="9.5" fill="#7A4A00">nearest edge</text>
+  <text x="730" y="150" text-anchor="middle" font-size="9.5" fill="#7A4A00">location</text>
+
+  <line x1="780" y1="140" x2="850" y2="140" stroke="#FF9900" stroke-width="3" marker-end="url(#mu2)"/>
+  <text x="815" y="128" text-anchor="middle" font-size="9">AWS backbone</text>
+
+  <rect x="855" y="115" width="60" height="50" rx="8" fill="#FF9900"/>
+  <text x="885" y="135" text-anchor="middle" font-size="9" fill="#232F3E" font-weight="700">S3</text>
+  <text x="885" y="150" text-anchor="middle" font-size="9" fill="#232F3E" font-weight="700">bucket</text>
+
+  <defs>
+    <marker id="mu2" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 z" fill="#FF9900"/>
+    </marker>
+  </defs>
+
+  <text x="730" y="200" text-anchor="middle" font-size="10" fill="#7A4A00">the highway on-ramp, not the back roads</text>
+
+  <rect x="60" y="340" width="820" height="80" rx="10" fill="#0F1621" stroke="#FF9900"/>
+  <text x="470" y="370" text-anchor="middle" font-size="13" font-weight="700" fill="#FF9900">"Don't carry the couch through the door whole — take it apart,</text>
+  <text x="470" y="392" text-anchor="middle" font-size="13" font-weight="700" fill="#FF9900">carry the pieces at once, and take the highway to get there faster."</text>
+</svg>

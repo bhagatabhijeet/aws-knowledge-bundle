@@ -1,0 +1,48 @@
+<svg viewBox="0 0 960 560" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="0" y="0" width="960" height="560" fill="#F7F9FC"/>
+  <text x="480" y="36" text-anchor="middle" font-size="24" font-weight="700" fill="#232F3E">Every Shelf in the Warehouse</text>
+  <text x="480" y="58" text-anchor="middle" font-size="13" fill="#5A6B7D">Front door (fast, pricier) → mountain vault (slow, cheapest)</text>
+
+  <!-- Door -->
+  <text x="60" y="120" font-size="30">🚪</text>
+
+  <!-- Shelves as horizontal bars, left = door, right = vault -->
+  <g font-size="12">
+    <!-- Express One Zone -->
+    <rect x="110" y="90" width="800" height="42" rx="6" fill="#D13212"/>
+    <text x="130" y="116" fill="#FFFFFF" font-weight="700">S3 Express One Zone — single-digit ms — highest cost</text>
+
+    <!-- Standard -->
+    <rect x="110" y="140" width="740" height="42" rx="6" fill="#FF9900"/>
+    <text x="130" y="166" fill="#232F3E" font-weight="700">S3 Standard — milliseconds — 99.99% availability</text>
+
+    <!-- Intelligent-Tiering -->
+    <rect x="110" y="190" width="680" height="42" rx="6" fill="#FFAC31"/>
+    <text x="130" y="216" fill="#232F3E" font-weight="700">S3 Intelligent-Tiering — milliseconds — auto-managed, no retrieval fees</text>
+
+    <!-- Standard-IA -->
+    <rect x="110" y="240" width="600" height="42" rx="6" fill="#FFD08A"/>
+    <text x="130" y="266" fill="#232F3E" font-weight="700">S3 Standard-IA — milliseconds — 30-day minimum</text>
+
+    <!-- One Zone-IA -->
+    <rect x="110" y="290" width="540" height="42" rx="6" fill="#F5DDB0"/>
+    <text x="130" y="316" fill="#232F3E" font-weight="700">S3 One Zone-IA — milliseconds, single AZ — 30-day minimum</text>
+
+    <!-- Glacier Instant -->
+    <rect x="110" y="340" width="460" height="42" rx="6" fill="#B7CFE0"/>
+    <text x="130" y="366" fill="#232F3E" font-weight="700">Glacier Instant Retrieval — milliseconds — 90-day minimum</text>
+
+    <!-- Glacier Flexible -->
+    <rect x="110" y="390" width="360" height="42" rx="6" fill="#8FA9C2"/>
+    <text x="130" y="416" fill="#232F3E" font-weight="700">Glacier Flexible Retrieval — minutes to hours — 90-day min</text>
+
+    <!-- Deep Archive -->
+    <rect x="110" y="440" width="260" height="42" rx="6" fill="#5C7A9C"/>
+    <text x="130" y="466" fill="#FFFFFF" font-weight="700">Glacier Deep Archive — 12–48 hours — cheapest, 180-day min</text>
+  </g>
+
+  <text x="900" y="480" text-anchor="end" font-size="30">🏔️</text>
+
+  <rect x="80" y="500" width="800" height="45" rx="8" fill="#0F1621"/>
+  <text x="480" y="528" text-anchor="middle" font-size="13" fill="#FFFFFF">"The closer to the door, the more it costs to store — and the less it costs to grab."</text>
+</svg>

@@ -1,0 +1,42 @@
+<svg viewBox="0 0 900 380" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="0" y="0" width="900" height="380" fill="#F7F9FC"/>
+  <text x="450" y="38" text-anchor="middle" font-size="24" font-weight="700" fill="#232F3E">Presigned URL — the One-Time Guest Pass</text>
+
+  <!-- Owner -->
+  <text x="100" y="150" font-size="34">🧑‍💼</text>
+  <text x="100" y="190" text-anchor="middle" font-size="11" fill="#232F3E">Account owner</text>
+  <text x="100" y="204" text-anchor="middle" font-size="11" fill="#232F3E">(has real credentials)</text>
+
+  <!-- signed URL -->
+  <rect x="220" y="120" width="220" height="60" rx="10" fill="#FDE9CF" stroke="#FF9900" stroke-width="2"/>
+  <text x="330" y="145" text-anchor="middle" font-size="11" font-weight="700" fill="#7A4A00">🎫 Signed URL</text>
+  <text x="330" y="163" text-anchor="middle" font-size="9.5" fill="#7A4A00">expires in 1 hour, GET only</text>
+
+  <line x1="140" y1="150" x2="215" y2="150" stroke="#232F3E" stroke-width="2" marker-end="url(#pa)"/>
+  <text x="177" y="138" text-anchor="middle" font-size="10">1. generate</text>
+
+  <line x1="440" y1="150" x2="560" y2="150" stroke="#232F3E" stroke-width="2" stroke-dasharray="5,4" marker-end="url(#pa)"/>
+  <text x="500" y="138" text-anchor="middle" font-size="10">2. send link</text>
+
+  <!-- Recipient -->
+  <text x="620" y="150" font-size="34">🧑</text>
+  <text x="620" y="190" text-anchor="middle" font-size="11" fill="#232F3E">Recipient</text>
+  <text x="620" y="204" text-anchor="middle" font-size="11" fill="#232F3E">(no AWS account needed)</text>
+
+  <line x1="620" y1="220" x2="620" y2="260" stroke="#232F3E" stroke-width="2" marker-end="url(#pa)"/>
+  <text x="670" y="245" font-size="10">3. click link</text>
+
+  <!-- The object -->
+  <rect x="540" y="270" width="160" height="60" rx="10" fill="#DCEEFB" stroke="#146EB4" stroke-width="2"/>
+  <text x="620" y="295" text-anchor="middle" font-size="11" font-weight="700" fill="#0B4F8A">📦 report.pdf</text>
+  <text x="620" y="313" text-anchor="middle" font-size="9.5" fill="#0B4F8A">exactly this one object</text>
+
+  <defs>
+    <marker id="pa" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 z" fill="#232F3E"/>
+    </marker>
+  </defs>
+
+  <rect x="60" y="340" width="780" height="30" rx="6" fill="#EDEFF3"/>
+  <text x="450" y="360" text-anchor="middle" font-size="12" fill="#232F3E">"Whoever has the link has the pass — guard it like a password."</text>
+</svg>

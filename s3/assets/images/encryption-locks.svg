@@ -1,0 +1,40 @@
+<svg viewBox="0 0 940 420" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="0" y="0" width="940" height="420" fill="#F7F9FC"/>
+  <text x="470" y="38" text-anchor="middle" font-size="24" font-weight="700" fill="#232F3E">Four Locks for the Same Box</text>
+  <text x="470" y="60" text-anchor="middle" font-size="13" fill="#5A6B7D">Who holds the key decides which lock you're using</text>
+
+  <!-- SSE-S3 -->
+  <rect x="50" y="100" width="200" height="220" rx="12" fill="#DCEEFB" stroke="#146EB4" stroke-width="2"/>
+  <text x="150" y="130" text-anchor="middle" font-size="30">🔒</text>
+  <text x="150" y="165" text-anchor="middle" font-size="13" font-weight="700" fill="#0B4F8A">SSE-S3</text>
+  <text x="150" y="190" text-anchor="middle" font-size="10.5" fill="#0B4F8A">AWS holds the key</text>
+  <text x="150" y="206" text-anchor="middle" font-size="10.5" fill="#0B4F8A">automatic, default</text>
+  <text x="150" y="222" text-anchor="middle" font-size="10.5" fill="#0B4F8A">"the house lock"</text>
+
+  <!-- SSE-KMS -->
+  <rect x="270" y="100" width="200" height="220" rx="12" fill="#FDE9CF" stroke="#FF9900" stroke-width="2"/>
+  <text x="370" y="130" text-anchor="middle" font-size="30">🔐</text>
+  <text x="370" y="165" text-anchor="middle" font-size="13" font-weight="700" fill="#7A4A00">SSE-KMS</text>
+  <text x="370" y="190" text-anchor="middle" font-size="10.5" fill="#7A4A00">you control the key</text>
+  <text x="370" y="206" text-anchor="middle" font-size="10.5" fill="#7A4A00">via a keymaster's office</text>
+  <text x="370" y="222" text-anchor="middle" font-size="10.5" fill="#7A4A00">full audit trail</text>
+
+  <!-- SSE-C -->
+  <rect x="490" y="100" width="200" height="220" rx="12" fill="#E7F6E5" stroke="#59B200" stroke-width="2"/>
+  <text x="590" y="130" text-anchor="middle" font-size="30">🗝️</text>
+  <text x="590" y="165" text-anchor="middle" font-size="13" font-weight="700" fill="#2E5C00">SSE-C</text>
+  <text x="590" y="190" text-anchor="middle" font-size="10.5" fill="#2E5C00">you bring your own</text>
+  <text x="590" y="206" text-anchor="middle" font-size="10.5" fill="#2E5C00">padlock every request</text>
+  <text x="590" y="222" text-anchor="middle" font-size="10.5" fill="#2E5C00">AWS never stores it</text>
+
+  <!-- Client-side -->
+  <rect x="710" y="100" width="200" height="220" rx="12" fill="#F3E9FB" stroke="#8C4FD1" stroke-width="2"/>
+  <text x="810" y="130" text-anchor="middle" font-size="30">📦</text>
+  <text x="810" y="165" text-anchor="middle" font-size="13" font-weight="700" fill="#4B2570">Client-side</text>
+  <text x="810" y="190" text-anchor="middle" font-size="10.5" fill="#4B2570">locked before it ever</text>
+  <text x="810" y="206" text-anchor="middle" font-size="10.5" fill="#4B2570">leaves your building</text>
+  <text x="810" y="222" text-anchor="middle" font-size="10.5" fill="#4B2570">AWS never sees plaintext</text>
+
+  <rect x="70" y="355" width="800" height="45" rx="8" fill="#0F1621" stroke="#FF9900"/>
+  <text x="470" y="382" text-anchor="middle" font-size="13" fill="#FFFFFF">"Getting into the room isn't the same as opening the box."</text>
+</svg>

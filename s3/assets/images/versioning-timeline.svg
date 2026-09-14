@@ -1,0 +1,39 @@
+<svg viewBox="0 0 900 460" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="0" y="0" width="900" height="460" fill="#F7F9FC"/>
+  <text x="450" y="38" text-anchor="middle" font-size="24" font-weight="700" fill="#232F3E">Versioning — Stacking, Not Overwriting</text>
+
+  <!-- Unversioned example -->
+  <text x="180" y="80" text-anchor="middle" font-size="14" font-weight="700" fill="#8A0000">Unversioned bucket</text>
+  <rect x="110" y="100" width="140" height="60" fill="#FFFFFF" stroke="#D13212" stroke-width="2" rx="6"/>
+  <text x="180" y="135" text-anchor="middle" font-size="12" fill="#8A0000">v2 (only copy)</text>
+  <text x="180" y="180" text-anchor="middle" font-size="10.5" fill="#8A0000" font-style="italic">v1 is gone forever</text>
+
+  <!-- Versioned stack -->
+  <text x="650" y="80" text-anchor="middle" font-size="14" font-weight="700" fill="#1D6B00">Versioning-enabled bucket</text>
+  <rect x="560" y="220" width="180" height="45" fill="#FFFFFF" stroke="#59B200" stroke-width="2" rx="6"/>
+  <text x="650" y="248" text-anchor="middle" font-size="11" fill="#2E5C00">v1 — original upload</text>
+
+  <rect x="560" y="175" width="180" height="45" fill="#FFFFFF" stroke="#59B200" stroke-width="2" rx="6"/>
+  <text x="650" y="203" text-anchor="middle" font-size="11" fill="#2E5C00">v2 — first overwrite</text>
+
+  <rect x="560" y="130" width="180" height="45" fill="#FFFFFF" stroke="#59B200" stroke-width="2" rx="6"/>
+  <text x="650" y="158" text-anchor="middle" font-size="11" fill="#2E5C00">v3 — second overwrite</text>
+
+  <rect x="560" y="85" width="180" height="45" fill="#E7F6E5" stroke="#1D6B00" stroke-width="3" rx="6"/>
+  <text x="650" y="113" text-anchor="middle" font-size="11" font-weight="700" fill="#1D6B00">DELETE MARKER (current)</text>
+
+  <text x="650" y="290" text-anchor="middle" font-size="10.5" fill="#2E5C00" font-style="italic">every past edition is still retrievable by version ID</text>
+
+  <!-- Arrow between -->
+  <line x1="330" y1="200" x2="480" y2="200" stroke="#232F3E" stroke-width="2" stroke-dasharray="6,4" marker-end="url(#a7)"/>
+  <text x="405" y="188" text-anchor="middle" font-size="10.5" fill="#232F3E">enable</text>
+  <defs>
+    <marker id="a7" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 z" fill="#232F3E"/>
+    </marker>
+  </defs>
+
+  <rect x="70" y="340" width="760" height="80" rx="10" fill="#EDEFF3" stroke="#C9D2DC"/>
+  <text x="450" y="368" text-anchor="middle" font-size="13" fill="#232F3E">"A delete marker is a sticky note that says 'not here' —</text>
+  <text x="450" y="390" text-anchor="middle" font-size="13" fill="#232F3E">lift the note and every version underneath is still there."</text>
+</svg>

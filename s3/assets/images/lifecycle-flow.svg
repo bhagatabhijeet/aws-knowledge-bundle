@@ -1,0 +1,51 @@
+<svg viewBox="0 0 960 420" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <rect x="0" y="0" width="960" height="420" fill="#F7F9FC"/>
+  <text x="480" y="38" text-anchor="middle" font-size="24" font-weight="700" fill="#232F3E">Lifecycle Management — the Warehouse Robot</text>
+
+  <text x="80" y="130" font-size="40">🤖</text>
+  <text x="80" y="160" text-anchor="middle" font-size="11" fill="#232F3E">the rule,</text>
+  <text x="80" y="174" text-anchor="middle" font-size="11" fill="#232F3E">set once</text>
+
+  <!-- Timeline -->
+  <line x1="150" y1="130" x2="900" y2="130" stroke="#232F3E" stroke-width="2" marker-end="url(#a8)"/>
+  <defs>
+    <marker id="a8" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 z" fill="#232F3E"/>
+    </marker>
+  </defs>
+
+  <!-- Day 0 -->
+  <circle cx="180" cy="130" r="8" fill="#FF9900"/>
+  <rect x="130" y="150" width="100" height="60" rx="6" fill="#FDE9CF" stroke="#FF9900"/>
+  <text x="180" y="172" text-anchor="middle" font-size="11" font-weight="700" fill="#7A4A00">Day 0</text>
+  <text x="180" y="190" text-anchor="middle" font-size="10" fill="#7A4A00">S3 Standard</text>
+
+  <!-- Day 30 -->
+  <circle cx="380" cy="130" r="8" fill="#FFD08A"/>
+  <rect x="330" y="150" width="100" height="60" rx="6" fill="#F5DDB0" stroke="#B36B00"/>
+  <text x="380" y="172" text-anchor="middle" font-size="11" font-weight="700" fill="#7A4A00">Day 30</text>
+  <text x="380" y="190" text-anchor="middle" font-size="10" fill="#7A4A00">→ Standard-IA</text>
+
+  <!-- Day 90 -->
+  <circle cx="580" cy="130" r="8" fill="#8FA9C2"/>
+  <rect x="530" y="150" width="100" height="60" rx="6" fill="#B7CFE0" stroke="#3A5A7C"/>
+  <text x="580" y="172" text-anchor="middle" font-size="11" font-weight="700" fill="#1B3B57">Day 90</text>
+  <text x="580" y="190" text-anchor="middle" font-size="10" fill="#1B3B57">→ Glacier</text>
+
+  <!-- Day 365 -->
+  <circle cx="780" cy="130" r="8" fill="#5C7A9C"/>
+  <rect x="730" y="150" width="100" height="60" rx="6" fill="#8FA9C2" stroke="#1B3B57"/>
+  <text x="780" y="172" text-anchor="middle" font-size="11" font-weight="700" fill="#FFFFFF">Day 365</text>
+  <text x="780" y="190" text-anchor="middle" font-size="10" fill="#FFFFFF">→ Deep Archive</text>
+
+  <!-- Expiration -->
+  <text x="900" y="120" font-size="26">🗑️</text>
+  <text x="900" y="185" text-anchor="middle" font-size="10" fill="#8A0000">Day 2555:</text>
+  <text x="900" y="198" text-anchor="middle" font-size="10" fill="#8A0000">expired</text>
+
+  <rect x="70" y="250" width="820" height="120" rx="10" fill="#0F1621" stroke="#FF9900"/>
+  <text x="480" y="280" text-anchor="middle" font-size="13" font-weight="700" fill="#FF9900">"Set it once, let the robot handle every box from now on."</text>
+  <text x="480" y="310" text-anchor="middle" font-size="11.5" fill="#E2E8F0">Transitions move a box to a cheaper shelf on schedule.</text>
+  <text x="480" y="330" text-anchor="middle" font-size="11.5" fill="#E2E8F0">Expiration sends it to the shredder when it's no longer needed.</text>
+  <text x="480" y="350" text-anchor="middle" font-size="11.5" fill="#E2E8F0">Non-current versions can follow their own, faster schedule.</text>
+</svg>
