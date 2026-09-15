@@ -1,0 +1,57 @@
+<svg viewBox="0 0 940 540" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <defs>
+    <linearGradient id="sky6" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1B2A4A"/>
+      <stop offset="100%" stop-color="#3A5A8C"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="940" height="540" fill="url(#sky6)"/>
+  <text x="470" y="38" text-anchor="middle" font-size="24" font-weight="700" fill="#FFFFFF">The Robot-Horse Stable</text>
+  <text x="470" y="60" text-anchor="middle" font-size="13" fill="#CBD5E1">Desktop Browser Testing — a fully managed Selenium Grid</text>
+
+  <!-- Stable building -->
+  <rect x="120" y="100" width="700" height="330" fill="#37475E" stroke="#0F1621" stroke-width="3" rx="6"/>
+  <polygon points="100,100 470,55 840,100" fill="#146EB4" stroke="#0B4F8A" stroke-width="2"/>
+  <text x="470" y="82" text-anchor="middle" font-size="14" font-weight="700" fill="#FFFFFF">SELENIUM GRID STABLE</text>
+
+  <!-- Your test suite -->
+  <rect x="150" y="130" width="160" height="90" fill="#FDE9CF" stroke="#FF9900" stroke-width="2" rx="8"/>
+  <text x="230" y="160" text-anchor="middle" font-size="11" font-weight="700" fill="#7A4A00">🧪 Your Selenium</text>
+  <text x="230" y="178" text-anchor="middle" font-size="11" font-weight="700" fill="#7A4A00">WebDriver suite</text>
+  <text x="230" y="200" text-anchor="middle" font-size="10" fill="#7A4A00">uploaded once</text>
+
+  <line x1="310" y1="175" x2="365" y2="175" stroke="#FFD873" stroke-width="4"/>
+  <polygon points="365,168 381,175 365,182" fill="#FFD873"/>
+
+  <!-- Stalls: browsers running in parallel -->
+  <rect x="400" y="120" width="150" height="110" fill="#DCEEFB" stroke="#146EB4" stroke-width="2" rx="8"/>
+  <text x="475" y="155" text-anchor="middle" font-size="26">🐴</text>
+  <text x="475" y="180" text-anchor="middle" font-size="11" font-weight="700" fill="#0B4F8A">Chrome</text>
+  <text x="475" y="198" text-anchor="middle" font-size="9" fill="#0B4F8A">multiple versions</text>
+
+  <rect x="565" y="120" width="150" height="110" fill="#FDE4D6" stroke="#D9531E" stroke-width="2" rx="8"/>
+  <text x="640" y="155" text-anchor="middle" font-size="26">🐴</text>
+  <text x="640" y="180" text-anchor="middle" font-size="11" font-weight="700" fill="#8A3413">Firefox</text>
+  <text x="640" y="198" text-anchor="middle" font-size="9" fill="#8A3413">multiple versions</text>
+
+  <rect x="730" y="120" width="150" height="110" fill="#E7F6E5" stroke="#59B200" stroke-width="2" rx="8"/>
+  <text x="805" y="155" text-anchor="middle" font-size="26">🐴</text>
+  <text x="805" y="180" text-anchor="middle" font-size="11" font-weight="700" fill="#2E5C00">Internet Explorer</text>
+  <text x="805" y="198" text-anchor="middle" font-size="9" fill="#2E5C00">multiple versions</text>
+
+  <text x="640" y="255" text-anchor="middle" font-size="11" fill="#FFFFFF">Every stall runs its lap in parallel — the grid scales as needed, no VMs to provision.</text>
+
+  <!-- Results -->
+  <line x1="640" y1="270" x2="640" y2="300" stroke="#FFD873" stroke-width="3"/>
+  <polygon points="633,300 640,316 647,300" fill="#FFD873"/>
+
+  <rect x="400" y="325" width="480" height="90" fill="#0F1621" stroke="#FF9900" stroke-width="2" rx="8"/>
+  <text x="640" y="352" text-anchor="middle" font-size="12" font-weight="700" fill="#FFFFFF">📹 Video · Console logs · Action logs · WebDriver logs</text>
+  <text x="640" y="374" text-anchor="middle" font-size="10" fill="#B7CFE0">back from every browser, every run</text>
+  <text x="640" y="396" text-anchor="middle" font-size="10" fill="#8FA9C2">Billed per browser-minute actually used — no idle grid cost</text>
+
+  <text x="230" y="255" text-anchor="middle" font-size="11" fill="#FFD873">🌾 Separate from the</text>
+  <text x="230" y="273" text-anchor="middle" font-size="11" fill="#FFD873">real device barn next door</text>
+
+  <text x="470" y="490" text-anchor="middle" font-size="13" fill="#FFFFFF">Same web app, tested across every browser at once — no server to patch, no queue to wait in.</text>
+</svg>

@@ -21,5 +21,6 @@ Every service gets its own folder, its own running analogy, and its own set of h
 * [cloud-computing/](cloud-computing/index.md) — Cloud computing fundamentals, taught through **Moving Day**: leaving a fixed house (on-premises/traditional hosting) for an elastic apartment complex (the cloud), a brief history of AWS, the IaaS/PaaS/serverless spectrum, and decomposing one server into EC2/RDS/S3. Start here if you're new to the cloud.
 * [iam/](iam/index.md) — AWS Identity and Access Management, taught through **The Secure Office Building** analogy: root keys, employee badges, visitor passes, rulebooks, and the security guard who enforces them all.
 * [s3/](s3/index.md) — Amazon S3, taught through **The Self-Storage Facility** analogy: rented units, boxes on shelves, and the shelf you pick trading price against retrieval speed.
+* [device-farm/](device-farm/index.md) — AWS Device Farm, taught through **The Real Device Farm** analogy: real animals in the barn (physical devices), a ranch hand running automated tests in parallel, and a separate stable of robot horses (a managed Selenium Grid) for browser testing.
 
 More topics and services will be added over time — see [log.md](log.md) for the history of this bundle.

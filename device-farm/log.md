@@ -1,0 +1,5 @@
+# Device Farm Folder Update Log
+
+## 2026-09-15
+* **Creation**: Authored the full Device Farm concept set (what-is-device-farm, real-device-testing, automated-testing-frameworks, remote-access, desktop-browser-testing, test-results-and-debugging, private-device-lab, integrations-and-workflow, best-practices, mnemonics-cheatsheet, glossary) plus original SVG diagrams under `assets/images/`, all built on the "Real Device Farm" (barn) mnemonic analogy.
+* Corrected initial drafts against official AWS Device Farm Developer Guide pages supplied mid-session: the single built-in test type is **Fuzz** (not a separate "Explorer" type), supported frameworks are Appium/Instrumentation/XCTest/XCTest UI (not Espresso/UI Automator/Calabash as standalone frameworks), the managed execution model is **server-side execution** (paired with **client-side** Appium-endpoint testing during Remote Access), and every run/session lives inside a **Project**. Added CLI steps (`list-devices`, `create-remote-access-session`, `get-remote-access-session`) for starting a Remote Access session.

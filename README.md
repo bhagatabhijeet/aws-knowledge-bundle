@@ -63,6 +63,22 @@ Taught through **The Self-Storage Facility**: S3 stands for Simple Storage Servi
 **The one sentence that unlocks storage-class selection:**
 > *"The closer to the door, the more it costs to store — and the less it costs to grab."*
 
+### [`device-farm/`](device-farm/index.md) — AWS Device Farm
+
+Taught through **The Real Device Farm**: real physical devices are animals in the barn, a device pool is a herd, an automated test run is a ranch hand walking the whole herd through the same course at once, and Remote Access is you reaching into the pen to walk one animal yourself. A separate stable next door holds tireless robot horses — a managed Selenium Grid — for testing web apps across desktop browsers.
+
+![The Device Farm barn](device-farm/assets/images/device-farm-overview.svg)
+
+| | | |
+|---|---|---|
+| [What is Device Farm?](device-farm/what-is-device-farm.md) | [Real Device Testing](device-farm/real-device-testing.md) | [Automated Testing Frameworks](device-farm/automated-testing-frameworks.md) |
+| [Remote Access](device-farm/remote-access.md) | [Desktop Browser Testing](device-farm/desktop-browser-testing.md) | [Test Results & Debugging](device-farm/test-results-and-debugging.md) |
+| [Private Device Lab](device-farm/private-device-lab.md) | [Integrations & Workflow](device-farm/integrations-and-workflow.md) | [Best Practices](device-farm/best-practices.md) |
+| [Mnemonics Cheat Sheet](device-farm/mnemonics-cheatsheet.md) | [Glossary](device-farm/glossary.md) | |
+
+**The one sentence that unlocks real-device testing:**
+> *"Real animals beat cardboard cutouts every time."*
+
 More services are on the way — each one gets its own folder, its own analogy, and its own set of diagrams. See [log.md](log.md) for the bundle's history.
 
 ## How this bundle is organized
@@ -74,7 +90,8 @@ This repository follows the [Open Knowledge Format (OKF) v0.2](https://github.co
 ├── log.md                # bundle changelog
 ├── cloud-computing/      # fundamentals — start here
 ├── iam/                  # one folder per AWS service/topic
-└── s3/                   # ...
+├── s3/                   # ...
+└── device-farm/          # ...
     ├── index.md           # folder index — start here
     ├── log.md             # folder changelog
     ├── *.md               # one concept per file, YAML frontmatter + sources
@@ -88,4 +105,5 @@ Every concept doc cites its official AWS source in a `sources:` frontmatter bloc
 👉 **New to the cloud entirely?** Begin at [`cloud-computing/index.md`](cloud-computing/index.md).
 👉 **New to IAM?** Begin at [`iam/index.md`](iam/index.md).
 👉 **New to S3?** Begin at [`s3/index.md`](s3/index.md).
-👉 **Cramming before an exam or interview?** Jump to the [IAM](iam/mnemonics-cheatsheet.md) or [S3](s3/mnemonics-cheatsheet.md) Mnemonics Cheat Sheet.
+👉 **New to Device Farm?** Begin at [`device-farm/index.md`](device-farm/index.md).
+👉 **Cramming before an exam or interview?** Jump to the [IAM](iam/mnemonics-cheatsheet.md), [S3](s3/mnemonics-cheatsheet.md), or [Device Farm](device-farm/mnemonics-cheatsheet.md) Mnemonics Cheat Sheet.

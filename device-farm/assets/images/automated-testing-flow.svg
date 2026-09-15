@@ -1,0 +1,73 @@
+<svg viewBox="0 0 940 540" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <defs>
+    <linearGradient id="sky5" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1B2A4A"/>
+      <stop offset="100%" stop-color="#3A5A8C"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="940" height="540" fill="url(#sky5)"/>
+  <text x="470" y="38" text-anchor="middle" font-size="24" font-weight="700" fill="#FFFFFF">One Ranch Hand, Every Device at Once</text>
+  <text x="470" y="60" text-anchor="middle" font-size="13" fill="#CBD5E1">Server-side execution: parallel automated testing across a device pool</text>
+
+  <!-- Upload stage -->
+  <rect x="60" y="100" width="180" height="90" fill="#DCEEFB" stroke="#146EB4" stroke-width="2" rx="8"/>
+  <text x="150" y="130" text-anchor="middle" font-size="12" font-weight="700" fill="#0B4F8A">📦 App + Tests</text>
+  <text x="150" y="150" text-anchor="middle" font-size="10" fill="#0B4F8A">uploaded to a</text>
+  <text x="150" y="166" text-anchor="middle" font-size="10" fill="#0B4F8A">service-managed S3 bucket</text>
+
+  <!-- Arrow -->
+  <line x1="240" y1="145" x2="300" y2="145" stroke="#FFD873" stroke-width="4"/>
+  <polygon points="300,138 316,145 300,152" fill="#FFD873"/>
+
+  <!-- Ranch hand -->
+  <rect x="320" y="100" width="160" height="90" fill="#FDE9CF" stroke="#FF9900" stroke-width="2" rx="8"/>
+  <text x="400" y="135" text-anchor="middle" font-size="26">🤠</text>
+  <text x="400" y="165" text-anchor="middle" font-size="10" font-weight="700" fill="#7A4A00">Device Farm</text>
+  <text x="400" y="180" text-anchor="middle" font-size="10" fill="#7A4A00">runs it on every device</text>
+
+  <!-- Arrow fan-out -->
+  <line x1="480" y1="145" x2="540" y2="145" stroke="#FFD873" stroke-width="3"/>
+
+  <!-- Devices row, all running same test -->
+  <g>
+    <rect x="560" y="90" width="90" height="70" fill="#2E3F55" stroke="#0F1621" stroke-width="2" rx="8"/>
+    <text x="605" y="130" text-anchor="middle" font-size="24">📱</text>
+    <text x="605" y="150" text-anchor="middle" font-size="9" fill="#B7CFE0">Pixel 8</text>
+
+    <rect x="665" y="90" width="90" height="70" fill="#2E3F55" stroke="#0F1621" stroke-width="2" rx="8"/>
+    <text x="710" y="130" text-anchor="middle" font-size="24">📱</text>
+    <text x="710" y="150" text-anchor="middle" font-size="9" fill="#B7CFE0">Galaxy S24</text>
+
+    <rect x="770" y="90" width="90" height="70" fill="#2E3F55" stroke="#0F1621" stroke-width="2" rx="8"/>
+    <text x="815" y="130" text-anchor="middle" font-size="24">📱</text>
+    <text x="815" y="150" text-anchor="middle" font-size="9" fill="#B7CFE0">iPhone 15</text>
+
+    <rect x="560" y="175" width="90" height="70" fill="#2E3F55" stroke="#0F1621" stroke-width="2" rx="8"/>
+    <text x="605" y="215" text-anchor="middle" font-size="24">📱</text>
+    <text x="605" y="235" text-anchor="middle" font-size="9" fill="#B7CFE0">iPad Air</text>
+
+    <rect x="665" y="175" width="90" height="70" fill="#2E3F55" stroke="#0F1621" stroke-width="2" rx="8"/>
+    <text x="710" y="215" text-anchor="middle" font-size="24">📱</text>
+    <text x="710" y="235" text-anchor="middle" font-size="9" fill="#B7CFE0">Pixel 7a</text>
+
+    <rect x="770" y="175" width="90" height="70" fill="#2E3F55" stroke="#0F1621" stroke-width="2" rx="8"/>
+    <text x="815" y="215" text-anchor="middle" font-size="24">📱</text>
+    <text x="815" y="235" text-anchor="middle" font-size="9" fill="#B7CFE0">Galaxy Tab</text>
+  </g>
+
+  <text x="710" y="278" text-anchor="middle" font-size="11" fill="#FFFFFF">Same test, every device, at the same time — one wall-clock run, not six.</text>
+
+  <!-- Results coming back -->
+  <line x1="710" y1="290" x2="710" y2="330" stroke="#FFD873" stroke-width="3"/>
+  <polygon points="703,330 710,346 717,330" fill="#FFD873"/>
+
+  <rect x="440" y="350" width="540" height="120" fill="#0F1621" stroke="#FF9900" stroke-width="2" rx="8"/>
+  <text x="710" y="378" text-anchor="middle" font-size="13" font-weight="700" fill="#FFFFFF">📹🩺 Per-device results come back:</text>
+  <text x="710" y="400" text-anchor="middle" font-size="11" fill="#B7CFE0">video · device &amp; framework logs · performance data · screenshots</text>
+  <text x="710" y="422" text-anchor="middle" font-size="11" fill="#B7CFE0">🧩 issue clustering groups the same failure across devices</text>
+  <text x="710" y="446" text-anchor="middle" font-size="10" fill="#8FA9C2">"You pay for the minutes each animal spent on the course."</text>
+
+  <text x="230" y="440" text-anchor="middle" font-size="12" font-weight="700" fill="#FFD873">🐑 Device Pool</text>
+  <text x="230" y="460" text-anchor="middle" font-size="10" fill="#CBD5E1">a curated herd, not the</text>
+  <text x="230" y="475" text-anchor="middle" font-size="10" fill="#CBD5E1">whole barn, for every run</text>
+</svg>
