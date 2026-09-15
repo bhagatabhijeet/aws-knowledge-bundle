@@ -1,0 +1,75 @@
+<svg viewBox="0 0 940 540" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <defs>
+    <linearGradient id="sky7" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0B1C3D"/>
+      <stop offset="100%" stop-color="#1B3A63"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="940" height="540" fill="url(#sky7)"/>
+  <text x="470" y="38" text-anchor="middle" font-size="24" font-weight="700" fill="#FFFFFF">The AWS World Map</text>
+  <text x="470" y="60" text-anchor="middle" font-size="13" fill="#CBD5E1">Cities (Regions), boroughs (AZs), and corner stores (Edge Locations)</text>
+
+  <!-- Simple world outline suggestion via dotted grid -->
+  <g stroke="#2E4A73" stroke-width="1" opacity="0.5">
+    <line x1="0" y1="150" x2="940" y2="150"/>
+    <line x1="0" y1="250" x2="940" y2="250"/>
+    <line x1="0" y1="350" x2="940" y2="350"/>
+    <line x1="0" y1="450" x2="940" y2="450"/>
+  </g>
+
+  <!-- City 1 (Region) -->
+  <g>
+    <circle cx="200" cy="200" r="46" fill="#232F3E" stroke="#FF9900" stroke-width="3"/>
+    <text x="200" y="196" text-anchor="middle" font-size="20">🏙️</text>
+    <text x="200" y="214" text-anchor="middle" font-size="9" fill="#FFD873">us-east-1</text>
+    <!-- boroughs -->
+    <circle cx="170" cy="255" r="12" fill="#146EB4"/>
+    <circle cx="200" cy="262" r="12" fill="#146EB4"/>
+    <circle cx="230" cy="255" r="12" fill="#146EB4"/>
+    <text x="200" y="290" text-anchor="middle" font-size="9" fill="#B7CFE0">3 Availability Zones</text>
+  </g>
+
+  <!-- City 2 (Region) -->
+  <g>
+    <circle cx="620" cy="140" r="46" fill="#232F3E" stroke="#FF9900" stroke-width="3"/>
+    <text x="620" y="136" text-anchor="middle" font-size="20">🏙️</text>
+    <text x="620" y="154" text-anchor="middle" font-size="9" fill="#FFD873">eu-west-2</text>
+    <circle cx="590" cy="195" r="12" fill="#146EB4"/>
+    <circle cx="620" cy="202" r="12" fill="#146EB4"/>
+    <circle cx="650" cy="195" r="12" fill="#146EB4"/>
+    <text x="620" y="230" text-anchor="middle" font-size="9" fill="#B7CFE0">3 Availability Zones</text>
+  </g>
+
+  <!-- City 3 (Region) -->
+  <g>
+    <circle cx="800" cy="320" r="46" fill="#232F3E" stroke="#FF9900" stroke-width="3"/>
+    <text x="800" y="316" text-anchor="middle" font-size="20">🏙️</text>
+    <text x="800" y="334" text-anchor="middle" font-size="9" fill="#FFD873">ap-southeast-1</text>
+    <circle cx="770" cy="375" r="12" fill="#146EB4"/>
+    <circle cx="800" cy="382" r="12" fill="#146EB4"/>
+    <circle cx="830" cy="375" r="12" fill="#146EB4"/>
+    <text x="800" y="410" text-anchor="middle" font-size="9" fill="#B7CFE0">3 Availability Zones</text>
+  </g>
+
+  <!-- Twin-city dashed line (multi-region) -->
+  <line x1="246" y1="200" x2="574" y2="150" stroke="#FFD873" stroke-width="2" stroke-dasharray="6,5"/>
+  <text x="410" y="160" text-anchor="middle" font-size="9" fill="#FFD873">multi-Region DR</text>
+
+  <!-- Corner stores (edge locations) scattered -->
+  <g font-size="16">
+    <text x="90" y="120">🏪</text>
+    <text x="350" y="90">🏪</text>
+    <text x="470" y="230">🏪</text>
+    <text x="700" y="80">🏪</text>
+    <text x="880" y="200">🏪</text>
+    <text x="120" y="400">🏪</text>
+    <text x="330" y="470">🏪</text>
+    <text x="550" y="440">🏪</text>
+    <text x="900" y="450">🏪</text>
+    <text x="60" y="280">🏪</text>
+  </g>
+
+  <rect x="330" y="460" width="280" height="55" fill="#0F1621" stroke="#FF9900" rx="6"/>
+  <text x="470" y="480" text-anchor="middle" font-size="10" fill="#FFFFFF">🏪 Edge Locations: hundreds worldwide,</text>
+  <text x="470" y="496" text-anchor="middle" font-size="10" fill="#FFFFFF">far more numerous than Regions</text>
+</svg>

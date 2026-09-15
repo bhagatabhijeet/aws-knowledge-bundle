@@ -79,6 +79,37 @@ Taught through **The Real Device Farm**: real physical devices are animals in th
 **The one sentence that unlocks real-device testing:**
 > *"Real animals beat cardboard cutouts every time."*
 
+### [`global-infrastructure/`](global-infrastructure/index.md) — AWS Global Infrastructure
+
+Taught through **The World Map**: a Region is a city — fully independent, its own everything. An Availability Zone is a borough inside that city, with its own power and water, linked to its siblings by private tunnels. An Edge Location is a corner store near every neighborhood on Earth. Local Zones, Wavelength Zones, and Outposts are satellite outposts built even closer than a Region can reach.
+
+![The AWS World Map](global-infrastructure/assets/images/global-infrastructure-overview.svg)
+
+| | | |
+|---|---|---|
+| [What is Global Infrastructure?](global-infrastructure/what-is-global-infrastructure.md) | [Regions](global-infrastructure/regions.md) | [Availability Zones](global-infrastructure/availability-zones.md) |
+| [Edge Locations & CloudFront](global-infrastructure/edge-locations-and-cloudfront.md) | [Local Zones & Wavelength Zones](global-infrastructure/local-zones-and-wavelength-zones.md) | [Designing for High Availability](global-infrastructure/designing-for-high-availability.md) |
+| [Best Practices](global-infrastructure/best-practices.md) | [Mnemonics Cheat Sheet](global-infrastructure/mnemonics-cheatsheet.md) | [Glossary](global-infrastructure/glossary.md) |
+
+**The one sentence that unlocks the whole map:**
+> *"A Region is a city; an AZ is a borough; a data center is a building."*
+
+### [`vpc/`](vpc/index.md) — Amazon VPC (Virtual Private Cloud)
+
+Taught through **The Gated Community**: a VPC is a private, isolated network you carve out of the cloud. Subnets are streets, each built entirely inside one borough (Availability Zone). Route tables are the street signs. An Internet Gateway is the community's one public front gate — two-way. A NAT Gateway is the mail-forwarding kiosk just inside it — outbound-only, so private streets can send mail out without ever letting a stranger mail them back.
+
+![The VPC Gated Community](vpc/assets/images/vpc-overview.svg)
+
+| | | |
+|---|---|---|
+| [What is a VPC?](vpc/what-is-a-vpc.md) | [Subnets](vpc/subnets.md) | [Route Tables](vpc/route-tables.md) |
+| [Internet Gateway](vpc/internet-gateway.md) | [NAT Gateways](vpc/nat-gateways.md) | [Security Groups & NACLs](vpc/security-groups-and-nacls.md) |
+| [VPC Peering & Endpoints](vpc/vpc-peering-and-endpoints.md) | [Connecting to On-Premises](vpc/connecting-to-on-premises.md) | [Best Practices](vpc/best-practices.md) |
+| [Mnemonics Cheat Sheet](vpc/mnemonics-cheatsheet.md) | [Glossary](vpc/glossary.md) | |
+
+**The one sentence that unlocks NAT Gateways:**
+> *"The front gate lets visitors knock. The mail-forwarding kiosk only lets residents send mail out — nobody outside can knock back through it."*
+
 More services are on the way — each one gets its own folder, its own analogy, and its own set of diagrams. See [log.md](log.md) for the bundle's history.
 
 ## How this bundle is organized
@@ -91,7 +122,9 @@ This repository follows the [Open Knowledge Format (OKF) v0.2](https://github.co
 ├── cloud-computing/      # fundamentals — start here
 ├── iam/                  # one folder per AWS service/topic
 ├── s3/                   # ...
-└── device-farm/          # ...
+├── device-farm/          # ...
+├── global-infrastructure/ # ...
+└── vpc/                  # ...
     ├── index.md           # folder index — start here
     ├── log.md             # folder changelog
     ├── *.md               # one concept per file, YAML frontmatter + sources
@@ -106,4 +139,6 @@ Every concept doc cites its official AWS source in a `sources:` frontmatter bloc
 👉 **New to IAM?** Begin at [`iam/index.md`](iam/index.md).
 👉 **New to S3?** Begin at [`s3/index.md`](s3/index.md).
 👉 **New to Device Farm?** Begin at [`device-farm/index.md`](device-farm/index.md).
-👉 **Cramming before an exam or interview?** Jump to the [IAM](iam/mnemonics-cheatsheet.md), [S3](s3/mnemonics-cheatsheet.md), or [Device Farm](device-farm/mnemonics-cheatsheet.md) Mnemonics Cheat Sheet.
+👉 **New to Regions/AZs/Edge Locations?** Begin at [`global-infrastructure/index.md`](global-infrastructure/index.md).
+👉 **New to VPC/networking?** Begin at [`vpc/index.md`](vpc/index.md).
+👉 **Cramming before an exam or interview?** Jump to the [IAM](iam/mnemonics-cheatsheet.md), [S3](s3/mnemonics-cheatsheet.md), [Device Farm](device-farm/mnemonics-cheatsheet.md), [Global Infrastructure](global-infrastructure/mnemonics-cheatsheet.md), or [VPC](vpc/mnemonics-cheatsheet.md) Mnemonics Cheat Sheet.

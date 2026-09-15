@@ -1,0 +1,76 @@
+<svg viewBox="0 0 940 540" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <defs>
+    <linearGradient id="skyv2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1B2A4A"/>
+      <stop offset="100%" stop-color="#3A5A8C"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="940" height="540" fill="url(#skyv2)"/>
+  <text x="470" y="36" text-anchor="middle" font-size="22" font-weight="700" fill="#FFFFFF">Front Gate vs. Mail-Forwarding Kiosk</text>
+  <text x="470" y="57" text-anchor="middle" font-size="12" fill="#CBD5E1">Internet Gateway (two-way) vs. NAT Gateway (outbound-only)</text>
+
+  <!-- Public subnet path (top) -->
+  <text x="120" y="110" font-size="12" font-weight="700" fill="#B7E68A">Public subnet — two-way</text>
+  <rect x="90" y="125" width="110" height="60" fill="#2E4A2E" stroke="#59B200" stroke-width="2" rx="8"/>
+  <text x="145" y="160" text-anchor="middle" font-size="22">💻</text>
+  <text x="145" y="177" text-anchor="middle" font-size="8" fill="#B7E68A">public instance</text>
+
+  <line x1="200" y1="155" x2="290" y2="155" stroke="#FFD873" stroke-width="4"/>
+  <polygon points="290,148 306,155 290,162" fill="#FFD873"/>
+  <line x1="290" y1="175" x2="200" y2="175" stroke="#8FA9C2" stroke-width="3"/>
+  <polygon points="200,168 184,175 200,182" fill="#8FA9C2"/>
+
+  <rect x="310" y="120" width="150" height="70" fill="#FDE9CF" stroke="#FF9900" stroke-width="2" rx="8"/>
+  <text x="385" y="150" text-anchor="middle" font-size="20">🚪</text>
+  <text x="385" y="170" text-anchor="middle" font-size="9" font-weight="700" fill="#7A4A00">Internet Gateway</text>
+  <text x="385" y="183" text-anchor="middle" font-size="8" fill="#7A4A00">two-way NAT</text>
+
+  <line x1="460" y1="155" x2="560" y2="155" stroke="#FFD873" stroke-width="4"/>
+  <polygon points="560,148 576,155 560,162" fill="#FFD873"/>
+  <line x1="560" y1="172" x2="460" y2="172" stroke="#8FA9C2" stroke-width="3"/>
+  <polygon points="460,165 444,172 460,179" fill="#8FA9C2"/>
+
+  <text x="620" y="150" font-size="22">🌐</text>
+  <text x="620" y="175" font-size="9" fill="#CBD5E1">the internet</text>
+  <text x="700" y="130" font-size="9" fill="#B7E68A">→ outbound requests</text>
+  <text x="700" y="180" font-size="9" fill="#8FA9C2">→ inbound connections too</text>
+
+  <!-- divider -->
+  <line x1="60" y1="230" x2="880" y2="230" stroke="#4A6693" stroke-width="1" stroke-dasharray="6,4"/>
+
+  <!-- Private subnet path (bottom) -->
+  <text x="120" y="270" font-size="12" font-weight="700" fill="#B7CFE0">Private subnet — outbound only</text>
+  <rect x="90" y="285" width="110" height="60" fill="#2E3F55" stroke="#146EB4" stroke-width="2" rx="8"/>
+  <text x="145" y="320" text-anchor="middle" font-size="22">💻</text>
+  <text x="145" y="337" text-anchor="middle" font-size="8" fill="#B7CFE0">private instance</text>
+
+  <line x1="200" y1="310" x2="290" y2="310" stroke="#FFD873" stroke-width="4"/>
+  <polygon points="290,303 306,310 290,317" fill="#FFD873"/>
+  <line x1="290" y1="330" x2="200" y2="330" stroke="#8FA9C2" stroke-width="3"/>
+  <polygon points="200,323 184,330 200,337" fill="#8FA9C2"/>
+  <text x="245" y="350" text-anchor="middle" font-size="8" fill="#8FA9C2">(reply only —</text>
+  <text x="245" y="362" text-anchor="middle" font-size="8" fill="#8FA9C2">never a new inbound connection)</text>
+
+  <rect x="310" y="280" width="150" height="70" fill="#0F1621" stroke="#FFD873" stroke-width="2" rx="8"/>
+  <text x="385" y="310" text-anchor="middle" font-size="20">📫</text>
+  <text x="385" y="330" text-anchor="middle" font-size="9" font-weight="700" fill="#FFD873">NAT Gateway</text>
+  <text x="385" y="343" text-anchor="middle" font-size="8" fill="#FFD873">lives in a public subnet</text>
+
+  <line x1="460" y1="310" x2="560" y2="310" stroke="#FFD873" stroke-width="4"/>
+  <polygon points="560,303 576,310 560,317" fill="#FFD873"/>
+  <line x1="560" y1="328" x2="460" y2="328" stroke="#8FA9C2" stroke-width="3"/>
+  <polygon points="460,321 444,328 460,335" fill="#8FA9C2"/>
+
+  <rect x="590" y="280" width="150" height="70" fill="#FDE9CF" stroke="#FF9900" stroke-width="2" rx="8"/>
+  <text x="665" y="310" text-anchor="middle" font-size="20">🚪</text>
+  <text x="665" y="330" text-anchor="middle" font-size="9" font-weight="700" fill="#7A4A00">Internet Gateway</text>
+
+  <line x1="740" y1="310" x2="800" y2="310" stroke="#FFD873" stroke-width="4"/>
+  <polygon points="800,303 816,310 800,317" fill="#FFD873"/>
+  <text x="850" y="315" font-size="22">🌐</text>
+
+  <rect x="230" y="410" width="480" height="90" fill="#0F1621" stroke="#FF9900" stroke-width="2" rx="8"/>
+  <text x="470" y="435" text-anchor="middle" font-size="11" fill="#FFFFFF">The NAT Gateway sits in the PUBLIC subnet, not the private one —</text>
+  <text x="470" y="455" text-anchor="middle" font-size="11" fill="#FFFFFF">it needs its own route to the Internet Gateway to forward anything.</text>
+  <text x="470" y="478" text-anchor="middle" font-size="10" fill="#B7CFE0">Nobody outside can open a NEW connection back through it.</text>
+</svg>

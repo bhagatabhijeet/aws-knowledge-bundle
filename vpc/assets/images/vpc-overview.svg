@@ -1,0 +1,78 @@
+<svg viewBox="0 0 940 560" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <defs>
+    <linearGradient id="skyv1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1B2A4A"/>
+      <stop offset="100%" stop-color="#3A5A8C"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="940" height="560" fill="url(#skyv1)"/>
+  <text x="470" y="36" text-anchor="middle" font-size="22" font-weight="700" fill="#FFFFFF">The VPC Gated Community</text>
+  <text x="470" y="57" text-anchor="middle" font-size="12" fill="#CBD5E1">10.0.0.0/16 — two Availability Zones, public and private streets</text>
+
+  <!-- VPC boundary -->
+  <rect x="50" y="80" width="840" height="430" fill="none" stroke="#FF9900" stroke-width="3" stroke-dasharray="9,5" rx="14"/>
+  <text x="470" y="72" text-anchor="middle" font-size="12" font-weight="700" fill="#FF9900">VPC: 10.0.0.0/16</text>
+
+  <!-- AZ A -->
+  <rect x="75" y="100" width="380" height="390" fill="none" stroke="#8FA9C2" stroke-width="1.5" stroke-dasharray="4,4" rx="10"/>
+  <text x="265" y="118" text-anchor="middle" font-size="11" fill="#B7CFE0">Availability Zone: us-east-1a</text>
+
+  <!-- Public subnet A -->
+  <rect x="95" y="135" width="340" height="110" fill="#2E4A2E" stroke="#59B200" stroke-width="2" rx="8"/>
+  <text x="265" y="155" text-anchor="middle" font-size="11" font-weight="700" fill="#B7E68A">🏠 Public subnet 10.0.0.0/24</text>
+  <text x="265" y="172" text-anchor="middle" font-size="9" fill="#B7E68A">→ 0.0.0.0/0 : Internet Gateway</text>
+  <rect x="115" y="182" width="90" height="50" fill="#59B200" rx="4"/>
+  <text x="160" y="212" text-anchor="middle" font-size="18">⚖️</text>
+  <text x="160" y="228" text-anchor="middle" font-size="8" fill="#0F1621">Load Balancer</text>
+  <rect x="330" y="182" width="90" height="50" fill="#59B200" rx="4"/>
+  <text x="375" y="212" text-anchor="middle" font-size="18">📫</text>
+  <text x="375" y="228" text-anchor="middle" font-size="8" fill="#0F1621">NAT Gateway A</text>
+
+  <!-- Private subnet A -->
+  <rect x="95" y="260" width="340" height="110" fill="#2E3F55" stroke="#146EB4" stroke-width="2" rx="8"/>
+  <text x="265" y="280" text-anchor="middle" font-size="11" font-weight="700" fill="#B7CFE0">🏠 Private subnet 10.0.10.0/24</text>
+  <text x="265" y="297" text-anchor="middle" font-size="9" fill="#B7CFE0">→ 0.0.0.0/0 : NAT Gateway A</text>
+  <rect x="115" y="307" width="90" height="50" fill="#146EB4" rx="4"/>
+  <text x="160" y="337" text-anchor="middle" font-size="18">💻</text>
+  <text x="160" y="353" text-anchor="middle" font-size="8" fill="#FFFFFF">App server</text>
+  <rect x="330" y="307" width="90" height="50" fill="#146EB4" rx="4"/>
+  <text x="375" y="337" text-anchor="middle" font-size="18">🗄️</text>
+  <text x="375" y="353" text-anchor="middle" font-size="8" fill="#FFFFFF">Database</text>
+
+  <!-- AZ B -->
+  <rect x="485" y="100" width="380" height="390" fill="none" stroke="#8FA9C2" stroke-width="1.5" stroke-dasharray="4,4" rx="10"/>
+  <text x="675" y="118" text-anchor="middle" font-size="11" fill="#B7CFE0">Availability Zone: us-east-1b</text>
+
+  <!-- Public subnet B -->
+  <rect x="505" y="135" width="340" height="110" fill="#2E4A2E" stroke="#59B200" stroke-width="2" rx="8"/>
+  <text x="675" y="155" text-anchor="middle" font-size="11" font-weight="700" fill="#B7E68A">🏠 Public subnet 10.0.1.0/24</text>
+  <text x="675" y="172" text-anchor="middle" font-size="9" fill="#B7E68A">→ 0.0.0.0/0 : Internet Gateway</text>
+  <rect x="525" y="182" width="90" height="50" fill="#59B200" rx="4"/>
+  <text x="570" y="212" text-anchor="middle" font-size="18">⚖️</text>
+  <text x="570" y="228" text-anchor="middle" font-size="8" fill="#0F1621">Load Balancer</text>
+  <rect x="740" y="182" width="90" height="50" fill="#59B200" rx="4"/>
+  <text x="785" y="212" text-anchor="middle" font-size="18">📫</text>
+  <text x="785" y="228" text-anchor="middle" font-size="8" fill="#0F1621">NAT Gateway B</text>
+
+  <!-- Private subnet B -->
+  <rect x="505" y="260" width="340" height="110" fill="#2E3F55" stroke="#146EB4" stroke-width="2" rx="8"/>
+  <text x="675" y="280" text-anchor="middle" font-size="11" font-weight="700" fill="#B7CFE0">🏠 Private subnet 10.0.11.0/24</text>
+  <text x="675" y="297" text-anchor="middle" font-size="9" fill="#B7CFE0">→ 0.0.0.0/0 : NAT Gateway B</text>
+  <rect x="525" y="307" width="90" height="50" fill="#146EB4" rx="4"/>
+  <text x="570" y="337" text-anchor="middle" font-size="18">💻</text>
+  <text x="570" y="353" text-anchor="middle" font-size="8" fill="#FFFFFF">App server</text>
+  <rect x="740" y="307" width="90" height="50" fill="#146EB4" rx="4"/>
+  <text x="785" y="337" text-anchor="middle" font-size="18">🗄️</text>
+  <text x="785" y="353" text-anchor="middle" font-size="8" fill="#FFFFFF">Database</text>
+
+  <!-- Internet Gateway (front gate) -->
+  <rect x="400" y="405" width="140" height="55" fill="#FDE9CF" stroke="#FF9900" stroke-width="2" rx="8"/>
+  <text x="470" y="428" text-anchor="middle" font-size="16">🚪</text>
+  <text x="470" y="450" text-anchor="middle" font-size="10" font-weight="700" fill="#7A4A00">Internet Gateway</text>
+
+  <line x1="265" y1="245" x2="440" y2="410" stroke="#FFD873" stroke-width="2"/>
+  <line x1="675" y1="245" x2="500" y2="410" stroke="#FFD873" stroke-width="2"/>
+
+  <text x="470" y="495" text-anchor="middle" font-size="12" fill="#FFFFFF">🌐 The Internet</text>
+  <line x1="470" y1="460" x2="470" y2="505" stroke="#FFD873" stroke-width="3"/>
+</svg>

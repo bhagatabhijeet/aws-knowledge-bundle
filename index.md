@@ -22,5 +22,7 @@ Every service gets its own folder, its own running analogy, and its own set of h
 * [iam/](iam/index.md) — AWS Identity and Access Management, taught through **The Secure Office Building** analogy: root keys, employee badges, visitor passes, rulebooks, and the security guard who enforces them all.
 * [s3/](s3/index.md) — Amazon S3, taught through **The Self-Storage Facility** analogy: rented units, boxes on shelves, and the shelf you pick trading price against retrieval speed.
 * [device-farm/](device-farm/index.md) — AWS Device Farm, taught through **The Real Device Farm** analogy: real animals in the barn (physical devices), a ranch hand running automated tests in parallel, and a separate stable of robot horses (a managed Selenium Grid) for browser testing.
+* [global-infrastructure/](global-infrastructure/index.md) — AWS Global Infrastructure, taught through **The World Map** analogy: a Region is a city, an Availability Zone is a borough with its own power and water, and an Edge Location is a corner store near every neighborhood on Earth.
+* [vpc/](vpc/index.md) — Amazon VPC, taught through **The Gated Community** analogy: subnets are streets, route tables are street signs, an Internet Gateway is the front gate, and a NAT Gateway is the mail-forwarding kiosk that lets private streets send mail out without letting strangers mail back in.
 
 More topics and services will be added over time — see [log.md](log.md) for the history of this bundle.

@@ -1,0 +1,69 @@
+<svg viewBox="0 0 940 540" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <defs>
+    <linearGradient id="sky9" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0B1C3D"/>
+      <stop offset="100%" stop-color="#1B3A63"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="940" height="540" fill="url(#sky9)"/>
+  <text x="470" y="38" text-anchor="middle" font-size="24" font-weight="700" fill="#FFFFFF">Corner Stores Near Every Neighborhood</text>
+  <text x="470" y="60" text-anchor="middle" font-size="13" fill="#CBD5E1">Edge Locations, Regional Edge Caches, and the origin Region</text>
+
+  <!-- Origin region (the city / factory) -->
+  <rect x="380" y="360" width="180" height="110" fill="#232F3E" stroke="#FF9900" stroke-width="3" rx="10"/>
+  <text x="470" y="395" text-anchor="middle" font-size="22">🏙️</text>
+  <text x="470" y="418" text-anchor="middle" font-size="11" font-weight="700" fill="#FFD873">Origin Region</text>
+  <text x="470" y="435" text-anchor="middle" font-size="9" fill="#B7CFE0">your app, your data</text>
+  <text x="470" y="450" text-anchor="middle" font-size="9" fill="#B7CFE0">(the factory)</text>
+
+  <!-- Regional edge caches -->
+  <rect x="240" y="250" width="150" height="80" fill="#2E3F55" stroke="#146EB4" stroke-width="2" rx="8"/>
+  <text x="315" y="280" text-anchor="middle" font-size="18">🏭</text>
+  <text x="315" y="300" text-anchor="middle" font-size="9" font-weight="700" fill="#B7CFE0">Regional Edge Cache</text>
+  <text x="315" y="315" text-anchor="middle" font-size="8" fill="#8FA9C2">the regional warehouse</text>
+
+  <rect x="550" y="250" width="150" height="80" fill="#2E3F55" stroke="#146EB4" stroke-width="2" rx="8"/>
+  <text x="625" y="280" text-anchor="middle" font-size="18">🏭</text>
+  <text x="625" y="300" text-anchor="middle" font-size="9" font-weight="700" fill="#B7CFE0">Regional Edge Cache</text>
+  <text x="625" y="315" text-anchor="middle" font-size="8" fill="#8FA9C2">the regional warehouse</text>
+
+  <!-- lines from origin to regional caches -->
+  <line x1="420" y1="360" x2="340" y2="330" stroke="#FFD873" stroke-width="2"/>
+  <line x1="520" y1="360" x2="600" y2="330" stroke="#FFD873" stroke-width="2"/>
+
+  <!-- Edge locations (corner stores) -->
+  <g font-size="20">
+    <text x="120" y="150">🏪</text>
+    <text x="230" y="120">🏪</text>
+    <text x="330" y="160">🏪</text>
+    <text x="470" y="110">🏪</text>
+    <text x="600" y="160">🏪</text>
+    <text x="710" y="120">🏪</text>
+    <text x="820" y="150">🏪</text>
+  </g>
+
+  <!-- lines from edge locations to nearest regional cache -->
+  <line x1="130" y1="165" x2="290" y2="270" stroke="#8FA9C2" stroke-width="1.5"/>
+  <line x1="240" y1="135" x2="300" y2="260" stroke="#8FA9C2" stroke-width="1.5"/>
+  <line x1="340" y1="175" x2="330" y2="255" stroke="#8FA9C2" stroke-width="1.5"/>
+  <line x1="480" y1="125" x2="385" y2="270" stroke="#8FA9C2" stroke-width="1.5"/>
+  <line x1="480" y1="125" x2="555" y2="270" stroke="#8FA9C2" stroke-width="1.5"/>
+  <line x1="610" y1="175" x2="620" y2="255" stroke="#8FA9C2" stroke-width="1.5"/>
+  <line x1="720" y1="135" x2="660" y2="260" stroke="#8FA9C2" stroke-width="1.5"/>
+  <line x1="830" y1="165" x2="670" y2="270" stroke="#8FA9C2" stroke-width="1.5"/>
+
+  <!-- users near edge locations -->
+  <g font-size="14">
+    <text x="105" y="185">🧑</text>
+    <text x="215" y="105">🧑</text>
+    <text x="315" y="195">🧑</text>
+    <text x="455" y="95">🧑</text>
+    <text x="585" y="195">🧑</text>
+    <text x="695" y="105">🧑</text>
+    <text x="805" y="185">🧑</text>
+  </g>
+
+  <rect x="270" y="470" width="400" height="55" fill="#0F1621" stroke="#FF9900" rx="8"/>
+  <text x="470" y="492" text-anchor="middle" font-size="11" fill="#FFFFFF">Cached at the corner store → served in milliseconds.</text>
+  <text x="470" y="510" text-anchor="middle" font-size="11" fill="#FFFFFF">Not cached → checks the regional warehouse before ever calling the factory.</text>
+</svg>
