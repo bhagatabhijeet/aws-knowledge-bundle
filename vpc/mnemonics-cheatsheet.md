@@ -23,6 +23,7 @@ generated:
 | 📫 The mail-forwarding kiosk just inside the gate | A NAT Gateway — outbound-only |
 | 🔒 The lock on one house's front door | A Security Group — stateful, allow-only, per-instance |
 | 🚧 The guard booth at the entrance to a street | A Network ACL — stateless, allow+deny, per-subnet |
+| 🏢 Whose building your house sits in | Tenancy — default (shared), dedicated instance, or dedicated host |
 | 🌉 A private footbridge to a neighboring community | VPC Peering — direct, non-transitive |
 | 🚇 A private tunnel straight to a city service building | A VPC Endpoint (Gateway or Interface/PrivateLink) |
 | 🏗️ A central roundabout connecting many communities | A Transit Gateway |
@@ -42,6 +43,8 @@ generated:
 8. **"The guard booth reads its rules in order and stops at the first match. The lock just checks its whole approved list."** — NACL rule order matters; Security Group rules don't conflict, since all are "allow."
 9. **"A footbridge only connects the two communities it was built between."** — VPC Peering is non-transitive.
 10. **"Instead of a footbridge between every pair of communities, build one central roundabout."** — Transit Gateway replaces a full mesh of peering connections.
+11. **"Default: you don't know or care who else lives in the building. Dedicated Instance: you know for certain nobody else does. Dedicated Host: you hold the deed and assign the rooms yourself."** — the three tenancy levels.
+12. **"A community zoned 'no shared buildings allowed' overrides any individual resident's request to live in one."** — a VPC's `dedicated` instance-tenancy attribute forces every instance in it to be dedicated or host tenancy.
 
 ## Public vs. private subnet, at a glance
 
@@ -62,6 +65,7 @@ Private subnet → no 0.0.0.0/0 route at all              (fully isolated)
 | NAT Gateway | A managed, one-way (outbound-initiated) gateway for private subnets |
 | Security Group | A stateful, allow-only firewall at the instance/ENI level |
 | Network ACL | A stateless, allow-and-deny firewall at the subnet level |
+| Tenancy | Whether an instance's physical host is shared, dedicated to your account, or a specific host you can see |
 | VPC Peering | A direct, non-transitive private link between two VPCs |
 | Gateway Endpoint | A free route-table target for private access to S3/DynamoDB |
 | Interface Endpoint (PrivateLink) | An ENI-based private connection to most other AWS services |

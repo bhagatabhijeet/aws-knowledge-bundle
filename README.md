@@ -104,8 +104,8 @@ Taught through **The Gated Community**: a VPC is a private, isolated network you
 |---|---|---|
 | [What is a VPC?](vpc/what-is-a-vpc.md) | [Subnets](vpc/subnets.md) | [Route Tables](vpc/route-tables.md) |
 | [Internet Gateway](vpc/internet-gateway.md) | [NAT Gateways](vpc/nat-gateways.md) | [Security Groups & NACLs](vpc/security-groups-and-nacls.md) |
-| [VPC Peering & Endpoints](vpc/vpc-peering-and-endpoints.md) | [Connecting to On-Premises](vpc/connecting-to-on-premises.md) | [Best Practices](vpc/best-practices.md) |
-| [Mnemonics Cheat Sheet](vpc/mnemonics-cheatsheet.md) | [Glossary](vpc/glossary.md) | |
+| [Tenancy](vpc/tenancy.md) | [VPC Peering & Endpoints](vpc/vpc-peering-and-endpoints.md) | [Connecting to On-Premises](vpc/connecting-to-on-premises.md) |
+| [Best Practices](vpc/best-practices.md) | [Mnemonics Cheat Sheet](vpc/mnemonics-cheatsheet.md) | [Glossary](vpc/glossary.md) |
 
 **The one sentence that unlocks NAT Gateways:**
 > *"The front gate lets visitors knock. The mail-forwarding kiosk only lets residents send mail out — nobody outside can knock back through it."*

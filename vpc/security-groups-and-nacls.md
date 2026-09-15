@@ -60,6 +60,6 @@ These two layers aren't redundant — they're **defense in depth**:
 
 ## Next up
 
-Both of these control traffic *within* your own community's walls. For traffic between two entirely separate communities — or straight to an AWS service's own building — see [VPC Peering & Endpoints](vpc-peering-and-endpoints.md).
+Both of these control traffic *between* houses. A different question entirely is whose physical building a house sits in to begin with — see [Tenancy](tenancy.md).
 
 [^aws-vpc-sg-nacl]: Amazon VPC User Guide, "Security groups vs. network ACLs."

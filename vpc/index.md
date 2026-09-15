@@ -27,6 +27,7 @@ You pick the community's total address range (the **CIDR block**), lay out **str
 | 📫 The mail-forwarding kiosk just inside the gate | A **NAT Gateway** — one-way outbound internet access for private subnets |
 | 🔒 The lock on one house's front door | A **Security Group** — stateful, per-instance firewall |
 | 🚧 The guard booth at the entrance to a street | A **Network ACL (NACL)** — stateless, per-subnet firewall |
+| 🏢 Whose building your house actually sits in | **Tenancy** — shared, dedicated-instance, or dedicated-host physical hardware |
 | 🌉 A private footbridge to a neighboring community | **VPC Peering** — a direct, non-transitive link between two VPCs |
 | 🚇 A private tunnel straight to a city service building | A **VPC Endpoint (PrivateLink)** — private access to an AWS service, no public internet |
 | 🏗️ A central roundabout connecting many communities at once | A **Transit Gateway** — a regional network hub |
@@ -42,11 +43,12 @@ You pick the community's total address range (the **CIDR block**), lay out **str
 4. [Internet Gateway](internet-gateway.md) — the one front gate, and how it's different from a NAT Gateway
 5. [NAT Gateways](nat-gateways.md) — the mail-forwarding kiosk, in full detail
 6. [Security Groups & Network ACLs](security-groups-and-nacls.md) — the lock on the door vs. the guard at the street
-7. [VPC Peering & Endpoints](vpc-peering-and-endpoints.md) — footbridges to other communities, and tunnels straight to AWS services
-8. [Connecting to On-Premises](connecting-to-on-premises.md) — VPN, Direct Connect, and Transit Gateway
-9. [Best Practices](best-practices.md) — how to actually lay out a community
-10. [Mnemonics Cheat Sheet](mnemonics-cheatsheet.md) — the one page to review before an exam or interview
-11. [Glossary](glossary.md) — every term, one line each
+7. [Tenancy](tenancy.md) — whose building your house actually sits in
+8. [VPC Peering & Endpoints](vpc-peering-and-endpoints.md) — footbridges to other communities, and tunnels straight to AWS services
+9. [Connecting to On-Premises](connecting-to-on-premises.md) — VPN, Direct Connect, and Transit Gateway
+10. [Best Practices](best-practices.md) — how to actually lay out a community
+11. [Mnemonics Cheat Sheet](mnemonics-cheatsheet.md) — the one page to review before an exam or interview
+12. [Glossary](glossary.md) — every term, one line each
 
 ## Official AWS references
 
@@ -55,5 +57,6 @@ You pick the community's total address range (the **CIDR block**), lay out **str
 * [NAT gateways](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-nat-gateway.html)
 * [Security groups vs. network ACLs](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-security-comparison.html)
 * [AWS Transit Gateway](https://aws.amazon.com/transit-gateway/)
+* [Dedicated Instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/dedicated-instance.html) · [Dedicated Hosts](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/how-dedicated-hosts-work.html)
 
 See [log.md](log.md) for this folder's update history.

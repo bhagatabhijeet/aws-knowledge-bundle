@@ -30,6 +30,12 @@ generated:
 | **Elastic IP** | A static, allocatable public IPv4 address | A reserved address plaque that never changes |
 | **Security Group** | A stateful, allow-only virtual firewall at the instance/ENI level | The lock on one house's front door |
 | **Network ACL (NACL)** | A stateless, allow-and-deny virtual firewall at the subnet level | The guard booth at the entrance to a street |
+| **Tenancy** | Whether an instance's underlying physical host is shared, dedicated to one account, or a specific host you control | Whose building your house actually sits in |
+| **Default tenancy** | The instance may share its physical host with other AWS accounts | A shared apartment building |
+| **Dedicated Instance** | The instance's physical host is used only by your account, but AWS still chooses which host | A private building reserved for your community alone |
+| **Dedicated Host** | An actual physical server allocated to your account, with visible sockets/cores/host ID and placement control | A specific building whose deed and floor plan you hold |
+| **Host affinity** | Pinning a specific instance to always run on a specific Dedicated Host | Assigning one resident permanently to one room |
+| **VPC instance tenancy attribute** | A VPC-level setting (`default` or `dedicated`) that constrains what tenancy instances launched into it may use | The community's own zoning rule |
 | **VPC Peering connection** | A direct, non-transitive private network link between two VPCs | A private footbridge to a neighboring community |
 | **VPC Endpoint** | A private connection from a VPC to an AWS service, bypassing the public internet | A private tunnel straight to a city service building |
 | **Gateway Endpoint** | A free, route-table-based VPC Endpoint — S3 and DynamoDB only | A free street sign pointing straight at the warehouse |
