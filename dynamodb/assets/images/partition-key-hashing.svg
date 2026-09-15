@@ -1,0 +1,68 @@
+<svg viewBox="0 0 940 520" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <defs>
+    <linearGradient id="skyd2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1B2A4A"/>
+      <stop offset="100%" stop-color="#3A5A8C"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="940" height="520" fill="url(#skyd2)"/>
+  <text x="470" y="36" text-anchor="middle" font-size="22" font-weight="700" fill="#FFFFFF">A Ticket Number, Hashed to a Section</text>
+  <text x="470" y="57" text-anchor="middle" font-size="12" fill="#CBD5E1">Same Partition Key value always lands in the same partition</text>
+
+  <!-- Tickets -->
+  <g>
+    <rect x="60" y="100" width="150" height="55" fill="#FDE9CF" stroke="#FF9900" stroke-width="2" rx="8"/>
+    <text x="135" y="125" text-anchor="middle" font-size="10" font-weight="700" fill="#7A4A00">🎫 C-1001</text>
+    <text x="135" y="142" text-anchor="middle" font-size="8" fill="#7A4A00">Partition Key</text>
+
+    <rect x="60" y="180" width="150" height="55" fill="#FDE9CF" stroke="#FF9900" stroke-width="2" rx="8"/>
+    <text x="135" y="205" text-anchor="middle" font-size="10" font-weight="700" fill="#7A4A00">🎫 C-2002</text>
+    <text x="135" y="222" text-anchor="middle" font-size="8" fill="#7A4A00">Partition Key</text>
+
+    <rect x="60" y="260" width="150" height="55" fill="#FDE9CF" stroke="#FF9900" stroke-width="2" rx="8"/>
+    <text x="135" y="285" text-anchor="middle" font-size="10" font-weight="700" fill="#7A4A00">🎫 C-1001</text>
+    <text x="135" y="302" text-anchor="middle" font-size="8" fill="#7A4A00">(a second order, same customer)</text>
+
+    <rect x="60" y="340" width="150" height="55" fill="#FDE9CF" stroke="#FF9900" stroke-width="2" rx="8"/>
+    <text x="135" y="365" text-anchor="middle" font-size="10" font-weight="700" fill="#7A4A00">🎫 C-3003</text>
+    <text x="135" y="382" text-anchor="middle" font-size="8" fill="#7A4A00">Partition Key</text>
+  </g>
+
+  <!-- Hash function -->
+  <rect x="270" y="200" width="140" height="90" fill="#0F1621" stroke="#FFD873" stroke-width="2" rx="10"/>
+  <text x="340" y="235" text-anchor="middle" font-size="20">🧮</text>
+  <text x="340" y="258" text-anchor="middle" font-size="10" font-weight="700" fill="#FFD873">Hash Function</text>
+  <text x="340" y="275" text-anchor="middle" font-size="8" fill="#FFD873">(internal, automatic)</text>
+
+  <!-- arrows from tickets to hash -->
+  <line x1="210" y1="127" x2="270" y2="230" stroke="#8FA9C2" stroke-width="1.5"/>
+  <line x1="210" y1="207" x2="270" y2="235" stroke="#8FA9C2" stroke-width="1.5"/>
+  <line x1="210" y1="287" x2="270" y2="255" stroke="#8FA9C2" stroke-width="1.5"/>
+  <line x1="210" y1="367" x2="270" y2="260" stroke="#8FA9C2" stroke-width="1.5"/>
+
+  <!-- arrows from hash to partitions -->
+  <line x1="410" y1="230" x2="560" y2="150" stroke="#FFD873" stroke-width="2.5"/>
+  <line x1="410" y1="240" x2="560" y2="240" stroke="#FFD873" stroke-width="2.5"/>
+  <line x1="410" y1="260" x2="560" y2="360" stroke="#FFD873" stroke-width="2.5"/>
+
+  <!-- Partitions -->
+  <rect x="570" y="100" width="290" height="100" fill="#2E3F55" stroke="#146EB4" stroke-width="2" rx="8"/>
+  <text x="715" y="130" text-anchor="middle" font-size="12" font-weight="700" fill="#B7CFE0">Partition 1</text>
+  <text x="620" y="165" font-size="18">🚗</text>
+  <text x="670" y="165" font-size="18">🚗</text>
+  <text x="715" y="180" text-anchor="middle" font-size="9" fill="#8FA9C2">holds every C-1001 item together</text>
+
+  <rect x="570" y="210" width="290" height="70" fill="#2E3F55" stroke="#146EB4" stroke-width="2" rx="8"/>
+  <text x="715" y="235" text-anchor="middle" font-size="12" font-weight="700" fill="#B7CFE0">Partition 2</text>
+  <text x="700" y="260" font-size="18">🚗</text>
+  <text x="750" y="260" text-anchor="middle" font-size="8" fill="#8FA9C2">C-2002</text>
+
+  <rect x="570" y="320" width="290" height="70" fill="#2E3F55" stroke="#146EB4" stroke-width="2" rx="8"/>
+  <text x="715" y="345" text-anchor="middle" font-size="12" font-weight="700" fill="#B7CFE0">Partition 3</text>
+  <text x="700" y="370" font-size="18">🚗</text>
+  <text x="750" y="370" text-anchor="middle" font-size="8" fill="#8FA9C2">C-3003</text>
+
+  <rect x="150" y="430" width="640" height="70" fill="#0F1621" stroke="#FF9900" stroke-width="2" rx="8"/>
+  <text x="470" y="455" text-anchor="middle" font-size="11" fill="#FFFFFF">Both C-1001 items land in the SAME partition — that's what makes a Query for</text>
+  <text x="470" y="475" text-anchor="middle" font-size="11" fill="#FFFFFF">"all of C-1001's orders" touch only one partition, no matter how big the table gets.</text>
+</svg>

@@ -1,0 +1,56 @@
+<svg viewBox="0 0 940 540" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <defs>
+    <linearGradient id="skyd1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1B2A4A"/>
+      <stop offset="100%" stop-color="#3A5A8C"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="940" height="540" fill="url(#skyd1)"/>
+  <text x="470" y="36" text-anchor="middle" font-size="22" font-weight="700" fill="#FFFFFF">The DynamoDB Valet Parking Garage</text>
+  <text x="470" y="57" text-anchor="middle" font-size="12" fill="#CBD5E1">Table = the garage. Item = a car. Primary Key = the ticket number.</text>
+
+  <!-- Garage building -->
+  <rect x="80" y="90" width="780" height="360" fill="#37475E" stroke="#0F1621" stroke-width="3" rx="6"/>
+  <polygon points="60,90 470,45 880,90" fill="#FF9900" stroke="#B36B00" stroke-width="2"/>
+  <text x="470" y="72" text-anchor="middle" font-size="14" font-weight="700" fill="#232F3E">TABLE: CustomerOrders</text>
+
+  <!-- Ticket booth -->
+  <rect x="110" y="120" width="140" height="90" fill="#FDE9CF" stroke="#FF9900" stroke-width="2" rx="8"/>
+  <text x="180" y="150" text-anchor="middle" font-size="22">🎫</text>
+  <text x="180" y="172" text-anchor="middle" font-size="9" font-weight="700" fill="#7A4A00">Primary Key</text>
+  <text x="180" y="188" text-anchor="middle" font-size="8" fill="#7A4A00">CustomerId + OrderId</text>
+
+  <line x1="250" y1="165" x2="300" y2="165" stroke="#FFD873" stroke-width="4"/>
+  <polygon points="300,158 316,165 300,172" fill="#FFD873"/>
+
+  <!-- Partitions (sections of garage) -->
+  <rect x="320" y="120" width="220" height="90" fill="#2E3F55" stroke="#146EB4" stroke-width="2" rx="8"/>
+  <text x="430" y="140" text-anchor="middle" font-size="10" font-weight="700" fill="#B7CFE0">Section A (Partition)</text>
+  <text x="360" y="175" font-size="20">🚗</text>
+  <text x="410" y="175" font-size="20">🚗</text>
+  <text x="460" y="175" font-size="20">🚗</text>
+  <text x="430" y="200" text-anchor="middle" font-size="8" fill="#8FA9C2">C-1001's orders</text>
+
+  <rect x="560" y="120" width="220" height="90" fill="#2E3F55" stroke="#146EB4" stroke-width="2" rx="8"/>
+  <text x="670" y="140" text-anchor="middle" font-size="10" font-weight="700" fill="#B7CFE0">Section B (Partition)</text>
+  <text x="600" y="175" font-size="20">🚗</text>
+  <text x="650" y="175" font-size="20">🚗</text>
+  <text x="670" y="200" text-anchor="middle" font-size="8" fill="#8FA9C2">C-2002's orders</text>
+
+  <!-- Query path -->
+  <rect x="110" y="240" width="300" height="70" fill="#0F1621" stroke="#59B200" stroke-width="2" rx="8"/>
+  <text x="260" y="265" text-anchor="middle" font-size="11" font-weight="700" fill="#B7E68A">👉 Query: "CustomerId = C-1001"</text>
+  <text x="260" y="285" text-anchor="middle" font-size="9" fill="#B7E68A">→ walks straight to Section A only</text>
+  <text x="260" y="300" text-anchor="middle" font-size="9" fill="#8FA9C2">fast — regardless of table size</text>
+
+  <!-- Scan path -->
+  <rect x="440" y="240" width="340" height="70" fill="#0F1621" stroke="#D9531E" stroke-width="2" rx="8"/>
+  <text x="610" y="265" text-anchor="middle" font-size="11" font-weight="700" fill="#FDBBA0">🔦 Scan: no key given</text>
+  <text x="610" y="285" text-anchor="middle" font-size="9" fill="#FDBBA0">→ checks every section, every car</text>
+  <text x="610" y="300" text-anchor="middle" font-size="9" fill="#8FA9C2">slow — cost scales with the whole table</text>
+
+  <rect x="150" y="340" width="640" height="90" fill="#0F1621" stroke="#FF9900" stroke-width="2" rx="8"/>
+  <text x="470" y="368" text-anchor="middle" font-size="11" fill="#FFFFFF">Hand over the right ticket (Primary Key) → the valet walks straight to your car.</text>
+  <text x="470" y="388" text-anchor="middle" font-size="11" fill="#FFFFFF">No ticket → the valet checks every car in the garage by hand.</text>
+  <text x="470" y="408" text-anchor="middle" font-size="10" fill="#B7CFE0">Same garage, wildly different amounts of work.</text>
+</svg>

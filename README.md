@@ -110,6 +110,22 @@ Taught through **The Gated Community**: a VPC is a private, isolated network you
 **The one sentence that unlocks NAT Gateways:**
 > *"The front gate lets visitors knock. The mail-forwarding kiosk only lets residents send mail out — nobody outside can knock back through it."*
 
+### [`dynamodb/`](dynamodb/index.md) — Amazon DynamoDB
+
+Taught through **The Valet Parking Garage**: a table is the garage, an item is a parked car, and the primary key is the ticket number that tells the valet exactly which section to walk to — instantly, no matter how many thousands of cars are in the garage. Includes a full hands-on tutorial: build a real `CustomerOrders` table, insert schemaless items, and run GetItem, Query, and Scan against it, with both Console steps and AWS CLI commands.
+
+![The DynamoDB Valet Parking Garage](dynamodb/assets/images/valet-garage-overview.svg)
+
+| | | |
+|---|---|---|
+| [What is DynamoDB?](dynamodb/what-is-dynamodb.md) | [Tables, Items & Attributes](dynamodb/tables-items-and-attributes.md) | [Primary Keys & Partitions](dynamodb/primary-keys-and-partitions.md) |
+| [Querying vs. Scanning](dynamodb/querying-vs-scanning.md) | [Secondary Indexes](dynamodb/secondary-indexes.md) | [Capacity Modes](dynamodb/capacity-modes.md) |
+| [Streams, TTL & Global Tables](dynamodb/streams-ttl-and-global-tables.md) | [Hands-On Tutorial](dynamodb/hands-on-customer-orders-table.md) | [Best Practices](dynamodb/best-practices.md) |
+| [Mnemonics Cheat Sheet](dynamodb/mnemonics-cheatsheet.md) | [Glossary](dynamodb/glossary.md) | |
+
+**The one sentence that unlocks the whole model:**
+> *"A relational database lets you ask almost any question, slowly if it must. A valet garage answers one question — instantly — and makes you work harder for anything else."*
+
 More services are on the way — each one gets its own folder, its own analogy, and its own set of diagrams. See [log.md](log.md) for the bundle's history.
 
 ## How this bundle is organized
@@ -124,7 +140,8 @@ This repository follows the [Open Knowledge Format (OKF) v0.2](https://github.co
 ├── s3/                   # ...
 ├── device-farm/          # ...
 ├── global-infrastructure/ # ...
-└── vpc/                  # ...
+├── vpc/                  # ...
+└── dynamodb/             # ...
     ├── index.md           # folder index — start here
     ├── log.md             # folder changelog
     ├── *.md               # one concept per file, YAML frontmatter + sources
@@ -141,4 +158,5 @@ Every concept doc cites its official AWS source in a `sources:` frontmatter bloc
 👉 **New to Device Farm?** Begin at [`device-farm/index.md`](device-farm/index.md).
 👉 **New to Regions/AZs/Edge Locations?** Begin at [`global-infrastructure/index.md`](global-infrastructure/index.md).
 👉 **New to VPC/networking?** Begin at [`vpc/index.md`](vpc/index.md).
-👉 **Cramming before an exam or interview?** Jump to the [IAM](iam/mnemonics-cheatsheet.md), [S3](s3/mnemonics-cheatsheet.md), [Device Farm](device-farm/mnemonics-cheatsheet.md), [Global Infrastructure](global-infrastructure/mnemonics-cheatsheet.md), or [VPC](vpc/mnemonics-cheatsheet.md) Mnemonics Cheat Sheet.
+👉 **New to DynamoDB?** Begin at [`dynamodb/index.md`](dynamodb/index.md).
+👉 **Cramming before an exam or interview?** Jump to the [IAM](iam/mnemonics-cheatsheet.md), [S3](s3/mnemonics-cheatsheet.md), [Device Farm](device-farm/mnemonics-cheatsheet.md), [Global Infrastructure](global-infrastructure/mnemonics-cheatsheet.md), [VPC](vpc/mnemonics-cheatsheet.md), or [DynamoDB](dynamodb/mnemonics-cheatsheet.md) Mnemonics Cheat Sheet.

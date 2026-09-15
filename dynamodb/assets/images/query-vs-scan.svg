@@ -1,0 +1,51 @@
+<svg viewBox="0 0 940 460" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <defs>
+    <linearGradient id="skyd3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1B2A4A"/>
+      <stop offset="100%" stop-color="#3A5A8C"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="940" height="460" fill="url(#skyd3)"/>
+  <text x="470" y="34" text-anchor="middle" font-size="22" font-weight="700" fill="#FFFFFF">Query vs. Scan</text>
+  <text x="470" y="54" text-anchor="middle" font-size="12" fill="#CBD5E1">Same garage, wildly different amounts of work</text>
+
+  <!-- Query side -->
+  <rect x="50" y="80" width="400" height="340" fill="#232F3E" stroke="#59B200" stroke-width="3" rx="10"/>
+  <text x="250" y="105" text-anchor="middle" font-size="13" font-weight="700" fill="#B7E68A">👉 Query — "CustomerId = C-1001"</text>
+
+  <rect x="80" y="125" width="340" height="60" fill="#2E4A2E" stroke="#59B200" stroke-width="2" rx="6"/>
+  <text x="250" y="150" text-anchor="middle" font-size="10" fill="#B7E68A">Section A (Partition) — touched</text>
+  <text x="150" y="172" font-size="18">🚗</text>
+  <text x="230" y="172" font-size="18">🚗</text>
+  <text x="310" y="172" font-size="18">🚗</text>
+
+  <rect x="80" y="200" width="340" height="45" fill="#3A4A3A" stroke="#5C7A5C" stroke-width="1.5" stroke-dasharray="4,3" rx="6"/>
+  <text x="250" y="227" text-anchor="middle" font-size="9" fill="#8FA98F">Section B — never touched</text>
+
+  <rect x="80" y="260" width="340" height="45" fill="#3A4A3A" stroke="#5C7A5C" stroke-width="1.5" stroke-dasharray="4,3" rx="6"/>
+  <text x="250" y="287" text-anchor="middle" font-size="9" fill="#8FA98F">Section C — never touched</text>
+
+  <rect x="80" y="320" width="340" height="70" fill="#0F1621" stroke="#59B200" stroke-width="2" rx="8"/>
+  <text x="250" y="345" text-anchor="middle" font-size="10" font-weight="700" fill="#B7E68A">Cost scales with items returned</text>
+  <text x="250" y="365" text-anchor="middle" font-size="10" fill="#B7E68A">from ONE partition — fast, always</text>
+
+  <!-- Scan side -->
+  <rect x="490" y="80" width="400" height="340" fill="#232F3E" stroke="#D9531E" stroke-width="3" rx="10"/>
+  <text x="690" y="105" text-anchor="middle" font-size="13" font-weight="700" fill="#FDBBA0">🔦 Scan — no key given</text>
+
+  <rect x="520" y="125" width="340" height="60" fill="#4A2E2E" stroke="#D9531E" stroke-width="2" rx="6"/>
+  <text x="690" y="150" text-anchor="middle" font-size="10" fill="#FDBBA0">Section A — checked, car by car</text>
+  <text x="590" y="172" font-size="18">🚗</text>
+  <text x="670" y="172" font-size="18">🚗</text>
+  <text x="750" y="172" font-size="18">🚗</text>
+
+  <rect x="520" y="200" width="340" height="45" fill="#4A2E2E" stroke="#D9531E" stroke-width="2" rx="6"/>
+  <text x="690" y="227" text-anchor="middle" font-size="9" fill="#FDBBA0">Section B — checked too</text>
+
+  <rect x="520" y="260" width="340" height="45" fill="#4A2E2E" stroke="#D9531E" stroke-width="2" rx="6"/>
+  <text x="690" y="287" text-anchor="middle" font-size="9" fill="#FDBBA0">Section C — checked too</text>
+
+  <rect x="520" y="320" width="340" height="70" fill="#0F1621" stroke="#D9531E" stroke-width="2" rx="8"/>
+  <text x="690" y="345" text-anchor="middle" font-size="10" font-weight="700" fill="#FDBBA0">Cost scales with the WHOLE table,</text>
+  <text x="690" y="365" text-anchor="middle" font-size="10" fill="#FDBBA0">no matter how few items match</text>
+</svg>
