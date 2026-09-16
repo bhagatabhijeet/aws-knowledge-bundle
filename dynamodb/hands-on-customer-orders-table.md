@@ -137,6 +137,19 @@ aws dynamodb query --table-name CustomerOrders --region us-east-1 \
 
 **Narrow it further** — only orders from February 2026 onward, using a Sort Key condition (this works because the date prefix in `OrderId` sorts correctly as a plain string):
 
+**Console:**
+
+1. **Explore table items** → confirm the mode toggle at the top is set to **Query** (not **Scan**).
+2. Under **Partition key**, select `CustomerId` and enter `C-1001`.
+3. Expand **Sort key** (collapsed by default) and select `OrderId`.
+4. Open the sort key's **condition dropdown** (defaults to "Equal to") and change it to **"Greater than or equal to."**
+5. Enter `2026-02-01` as the value.
+6. Choose **Run**.
+
+Only the `2026-02-03` and `2026-03-10` orders come back — the `2026-01-15` one is filtered out before it's ever returned, and `C-2002`'s partition is never touched. The same dropdown also offers **Between**, **Begins with**, **Less than**, and others — `"Begins with" 2026-02` would isolate just February's orders the same way.
+
+**CLI:**
+
 ```bash
 aws dynamodb query --table-name CustomerOrders --region us-east-1 \
   --key-condition-expression "CustomerId = :cid AND OrderId >= :start" \
