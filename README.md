@@ -126,6 +126,23 @@ Taught through **The Valet Parking Garage**: a table is the garage, an item is a
 **The one sentence that unlocks the whole model:**
 > *"A relational database lets you ask almost any question, slowly if it must. A valet garage answers one question — instantly — and makes you work harder for anything else."*
 
+### [`aws-cli/`](aws-cli/index.md) — The AWS Command Line Interface
+
+Taught through **The Universal Remote**: AWS is a house with 300+ devices and the CLI is the one remote that controls them all. Every command has the same grammar — **device → action → dials** (`aws <service> <subcommand> [options]`) — so what you learn for one service transfers to every other. A profile is which house the remote is paired to, the Region is which room, and `--query` is the filter on the channel guide. A one-stop guide: install, configure, authenticate with SSO or roles, filter output with JMESPath, page through results, drive S3, script safely, and troubleshoot.
+
+![The AWS CLI Universal Remote](aws-cli/assets/images/cli-remote-overview.svg)
+
+| | | |
+|---|---|---|
+| [What is the AWS CLI?](aws-cli/what-is-the-aws-cli.md) | [Installing & Updating](aws-cli/installing-and-updating.md) | [Configuring: Profiles & Settings](aws-cli/configuring-profiles-and-settings.md) |
+| [Authentication: SSO, Roles & Credentials](aws-cli/authentication-sso-and-roles.md) | [Command Structure & Help](aws-cli/command-structure-and-help.md) | [Output & Filtering](aws-cli/output-and-filtering.md) |
+| [Pagination & Input Files](aws-cli/pagination-and-input-files.md) | [Working with S3](aws-cli/s3-commands.md) | [Productivity & Scripting](aws-cli/productivity-and-scripting.md) |
+| [Troubleshooting](aws-cli/troubleshooting.md) | [Best Practices](aws-cli/best-practices.md) | [Mnemonics & Command Cheat Sheet](aws-cli/mnemonics-cheatsheet.md) |
+| [Glossary](aws-cli/glossary.md) | | |
+
+**The one sentence that unlocks every command:**
+> *"Device → action → dials."*
+
 More services are on the way — each one gets its own folder, its own analogy, and its own set of diagrams. See [log.md](log.md) for the bundle's history.
 
 ## How this bundle is organized
@@ -141,7 +158,8 @@ This repository follows the [Open Knowledge Format (OKF) v0.2](https://github.co
 ├── device-farm/          # ...
 ├── global-infrastructure/ # ...
 ├── vpc/                  # ...
-└── dynamodb/             # ...
+├── dynamodb/             # ...
+└── aws-cli/              # ...
     ├── index.md           # folder index — start here
     ├── log.md             # folder changelog
     ├── *.md               # one concept per file, YAML frontmatter + sources
@@ -159,4 +177,5 @@ Every concept doc cites its official AWS source in a `sources:` frontmatter bloc
 👉 **New to Regions/AZs/Edge Locations?** Begin at [`global-infrastructure/index.md`](global-infrastructure/index.md).
 👉 **New to VPC/networking?** Begin at [`vpc/index.md`](vpc/index.md).
 👉 **New to DynamoDB?** Begin at [`dynamodb/index.md`](dynamodb/index.md).
-👉 **Cramming before an exam or interview?** Jump to the [IAM](iam/mnemonics-cheatsheet.md), [S3](s3/mnemonics-cheatsheet.md), [Device Farm](device-farm/mnemonics-cheatsheet.md), [Global Infrastructure](global-infrastructure/mnemonics-cheatsheet.md), [VPC](vpc/mnemonics-cheatsheet.md), or [DynamoDB](dynamodb/mnemonics-cheatsheet.md) Mnemonics Cheat Sheet.
+👉 **Want to drive AWS from the terminal?** Begin at [`aws-cli/index.md`](aws-cli/index.md).
+👉 **Cramming before an exam or interview?** Jump to the [IAM](iam/mnemonics-cheatsheet.md), [S3](s3/mnemonics-cheatsheet.md), [Device Farm](device-farm/mnemonics-cheatsheet.md), [Global Infrastructure](global-infrastructure/mnemonics-cheatsheet.md), [VPC](vpc/mnemonics-cheatsheet.md), or [DynamoDB](dynamodb/mnemonics-cheatsheet.md), or [AWS CLI](aws-cli/mnemonics-cheatsheet.md) Mnemonics Cheat Sheet.

@@ -1,0 +1,5 @@
+# AWS CLI Folder Update Log
+
+## 2026-10-02
+* **Creation**: Authored the full AWS CLI guide — what-is-the-aws-cli, installing-and-updating (Linux/macOS/Windows, verify, `aws update`), configuring-profiles-and-settings (`aws configure`, config/credentials files, named profiles, environment variables, precedence), authentication-sso-and-roles (IAM Identity Center, assume-role, instance roles, access-key guidance), command-structure-and-help (grammar, global options, parameter types, shell quoting, `help`, `wait`), output-and-filtering (`--output`, `--filters`, `--query`/JMESPath), pagination-and-input-files (`--max-items`/`--page-size`/pager, skeletons, `--cli-input-json`, dry runs), s3-commands (`aws s3` vs `aws s3api`), productivity-and-scripting (auto-prompt, completion, aliases, history, scripting patterns), troubleshooting, best-practices, mnemonics-cheatsheet, and glossary — all built on the "Universal Remote" mnemonic analogy with three original SVG diagrams under `assets/images/`.
+* **Source**: Built from the official [AWS CLI v2 User Guide and Command Reference](https://docs.aws.amazon.com/cli/latest/).

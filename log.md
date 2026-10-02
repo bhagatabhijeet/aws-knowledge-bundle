@@ -1,5 +1,8 @@
 # Bundle Update Log
 
+## 2026-10-02
+* **Creation**: Added [aws-cli/](aws-cli/index.md), a one-stop guide to the AWS Command Line Interface built from the official v2 User Guide and Command Reference — installing and updating (Linux/macOS/Windows), `aws configure` and named profiles, the config/credentials files and precedence, IAM Identity Center (SSO) and assumed roles, command structure and quoting, `--output`/`--filters`/`--query` (JMESPath), pagination and skeleton input files, `aws s3` vs `aws s3api`, auto-prompt/completion/aliases/scripting, troubleshooting, and best practices — using the "Universal Remote" mnemonic analogy and three original diagrams.
+
 ## 2026-09-15
 * **Creation**: Added [device-farm/](device-farm/index.md), covering AWS Device Farm end to end — real device testing and device pools, automated testing frameworks (Appium, Instrumentation, XCTest/XCTest UI, built-in Fuzz), Remote Access and the client-side Appium endpoint, desktop browser testing (managed Selenium Grid), test results and debugging, the Private Device Lab, and integrations/workflow — using the "Real Device Farm" (barn) mnemonic analogy and three original diagrams.
 * **Creation**: Added [global-infrastructure/](global-infrastructure/index.md), covering Regions, Availability Zones, Edge Locations & CloudFront, Local Zones & Wavelength Zones, and designing for high availability across both — using the "World Map" (cities, boroughs, corner stores) mnemonic analogy and three original diagrams.

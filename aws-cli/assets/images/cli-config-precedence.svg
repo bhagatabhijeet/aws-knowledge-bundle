@@ -1,0 +1,55 @@
+<svg viewBox="0 0 940 520" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <defs>
+    <linearGradient id="skycli3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1B2A4A"/>
+      <stop offset="100%" stop-color="#3A5A8C"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="940" height="520" fill="url(#skycli3)"/>
+  <text x="470" y="36" text-anchor="middle" font-size="22" font-weight="700" fill="#FFFFFF">Where Does the CLI Look? — Precedence</text>
+  <text x="470" y="58" text-anchor="middle" font-size="12" fill="#CBD5E1">First match wins. The closer to your fingertips, the stronger the setting.</text>
+
+  <!-- stacked layers -->
+  <rect x="120" y="80"  width="700" height="42" rx="8" fill="#D9531E"/>
+  <text x="140" y="106" font-size="13" font-weight="700" fill="#FFFFFF">1  Command-line options</text>
+  <text x="800" y="106" text-anchor="end" font-size="12" font-family="Consolas, monospace" fill="#FFFFFF">--profile  --region  --output</text>
+
+  <rect x="120" y="128" width="700" height="42" rx="8" fill="#E8791E"/>
+  <text x="140" y="154" font-size="13" font-weight="700" fill="#FFFFFF">2  Environment variables</text>
+  <text x="800" y="154" text-anchor="end" font-size="12" font-family="Consolas, monospace" fill="#FFFFFF">AWS_PROFILE  AWS_REGION  AWS_ACCESS_KEY_ID…</text>
+
+  <rect x="120" y="176" width="700" height="42" rx="8" fill="#F2A71E"/>
+  <text x="140" y="202" font-size="13" font-weight="700" fill="#232F3E">3  Assume role  (and web identity)</text>
+  <text x="800" y="202" text-anchor="end" font-size="12" font-family="Consolas, monospace" fill="#232F3E">role_arn  source_profile  mfa_serial</text>
+
+  <rect x="120" y="224" width="700" height="42" rx="8" fill="#9BC53D"/>
+  <text x="140" y="250" font-size="13" font-weight="700" fill="#232F3E">4  IAM Identity Center (SSO)</text>
+  <text x="800" y="250" text-anchor="end" font-size="12" font-family="Consolas, monospace" fill="#232F3E">aws configure sso → aws sso login</text>
+
+  <rect x="120" y="272" width="700" height="42" rx="8" fill="#59B200"/>
+  <text x="140" y="298" font-size="13" font-weight="700" fill="#FFFFFF">5  credentials file</text>
+  <text x="800" y="298" text-anchor="end" font-size="12" font-family="Consolas, monospace" fill="#FFFFFF">~/.aws/credentials</text>
+
+  <rect x="120" y="320" width="700" height="42" rx="8" fill="#2E9E8F"/>
+  <text x="140" y="346" font-size="13" font-weight="700" fill="#FFFFFF">6  Custom credential process</text>
+  <text x="800" y="346" text-anchor="end" font-size="12" font-family="Consolas, monospace" fill="#FFFFFF">credential_process = …</text>
+
+  <rect x="120" y="368" width="700" height="42" rx="8" fill="#3A9BDC"/>
+  <text x="140" y="394" font-size="13" font-weight="700" fill="#FFFFFF">7  config file</text>
+  <text x="800" y="394" text-anchor="end" font-size="12" font-family="Consolas, monospace" fill="#FFFFFF">~/.aws/config</text>
+
+  <rect x="120" y="416" width="340" height="42" rx="8" fill="#5B6EE1"/>
+  <text x="140" y="442" font-size="13" font-weight="700" fill="#FFFFFF">8  Container credentials</text>
+  <text x="450" y="442" text-anchor="end" font-size="11" fill="#E2E8F0">ECS task role</text>
+
+  <rect x="480" y="416" width="340" height="42" rx="8" fill="#7A5BE1"/>
+  <text x="500" y="442" font-size="13" font-weight="700" fill="#FFFFFF">9  EC2 instance profile</text>
+  <text x="810" y="442" text-anchor="end" font-size="11" fill="#E2E8F0">metadata service</text>
+
+  <!-- side arrow -->
+  <path d="M70 90 L70 450" stroke="#FFFFFF" stroke-width="3" fill="none"/>
+  <polygon points="60,440 70,462 80,440" fill="#FFFFFF"/>
+  <text x="48" y="270" text-anchor="middle" font-size="11" fill="#CBD5E1" transform="rotate(-90 48 270)">strongest → weakest</text>
+
+  <text x="470" y="492" text-anchor="middle" font-size="12" font-style="italic" fill="#FFFFFF">Debug it with:  aws configure list   ·   aws sts get-caller-identity</text>
+</svg>

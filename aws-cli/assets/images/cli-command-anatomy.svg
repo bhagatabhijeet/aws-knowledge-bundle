@@ -1,0 +1,56 @@
+<svg viewBox="0 0 940 440" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <defs>
+    <linearGradient id="skycli2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1B2A4A"/>
+      <stop offset="100%" stop-color="#3A5A8C"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="940" height="440" fill="url(#skycli2)"/>
+  <text x="470" y="36" text-anchor="middle" font-size="22" font-weight="700" fill="#FFFFFF">Anatomy of an AWS CLI Command</text>
+  <text x="470" y="58" text-anchor="middle" font-size="12" fill="#CBD5E1">Device → action → dials</text>
+
+  <!-- command line -->
+  <rect x="40" y="85" width="860" height="70" rx="10" fill="#0F1621" stroke="#CBD5E1" stroke-width="2"/>
+  <text x="470" y="128" text-anchor="middle" font-size="22" font-family="Consolas, monospace" fill="#E2E8F0">aws   ec2   describe-instances   --region us-east-1   --query '…'   --output table</text>
+
+  <!-- brackets -->
+  <rect x="62"  y="165" width="50"  height="46" rx="8" fill="#FF9900"/>
+  <text x="87"  y="186" text-anchor="middle" font-size="11" font-weight="700" fill="#232F3E">aws</text>
+  <text x="87"  y="202" text-anchor="middle" font-size="9" fill="#232F3E">remote</text>
+
+  <rect x="140" y="165" width="70" height="46" rx="8" fill="#59B200"/>
+  <text x="175" y="186" text-anchor="middle" font-size="11" font-weight="700" fill="#FFFFFF">service</text>
+  <text x="175" y="202" text-anchor="middle" font-size="9" fill="#FFFFFF">📺 device</text>
+
+  <rect x="238" y="165" width="150" height="46" rx="8" fill="#3A9BDC"/>
+  <text x="313" y="186" text-anchor="middle" font-size="11" font-weight="700" fill="#FFFFFF">subcommand</text>
+  <text x="313" y="202" text-anchor="middle" font-size="9" fill="#FFFFFF">🔘 action (verb-noun)</text>
+
+  <rect x="420" y="165" width="440" height="46" rx="8" fill="#D9531E"/>
+  <text x="640" y="186" text-anchor="middle" font-size="11" font-weight="700" fill="#FFFFFF">options &amp; parameters — any order</text>
+  <text x="640" y="202" text-anchor="middle" font-size="9" fill="#FFFFFF">🎚️ dials: global (--region --output --query) and command-specific</text>
+
+  <!-- three families of verbs -->
+  <rect x="40" y="240" width="270" height="170" rx="10" fill="#232F3E" stroke="#59B200" stroke-width="2.5"/>
+  <text x="175" y="265" text-anchor="middle" font-size="13" font-weight="700" fill="#B7E68A">👀 Read verbs</text>
+  <text x="175" y="292" text-anchor="middle" font-size="12" font-family="Consolas, monospace" fill="#E2E8F0">describe-…</text>
+  <text x="175" y="314" text-anchor="middle" font-size="12" font-family="Consolas, monospace" fill="#E2E8F0">list-…</text>
+  <text x="175" y="336" text-anchor="middle" font-size="12" font-family="Consolas, monospace" fill="#E2E8F0">get-…</text>
+  <text x="175" y="372" text-anchor="middle" font-size="10" fill="#8FA98F">Safe to run — no changes</text>
+
+  <rect x="335" y="240" width="270" height="170" rx="10" fill="#232F3E" stroke="#3A9BDC" stroke-width="2.5"/>
+  <text x="470" y="265" text-anchor="middle" font-size="13" font-weight="700" fill="#A9D7F5">✏️ Write verbs</text>
+  <text x="470" y="292" text-anchor="middle" font-size="12" font-family="Consolas, monospace" fill="#E2E8F0">create-… put-…</text>
+  <text x="470" y="314" text-anchor="middle" font-size="12" font-family="Consolas, monospace" fill="#E2E8F0">update-… modify-…</text>
+  <text x="470" y="336" text-anchor="middle" font-size="12" font-family="Consolas, monospace" fill="#E2E8F0">start-… run-…</text>
+  <text x="470" y="372" text-anchor="middle" font-size="10" fill="#8FA98F">Changes things — check identity first</text>
+
+  <rect x="630" y="240" width="270" height="170" rx="10" fill="#232F3E" stroke="#D9531E" stroke-width="2.5"/>
+  <text x="765" y="265" text-anchor="middle" font-size="13" font-weight="700" fill="#FDBBA0">🗑️ Remove verbs</text>
+  <text x="765" y="292" text-anchor="middle" font-size="12" font-family="Consolas, monospace" fill="#E2E8F0">delete-…</text>
+  <text x="765" y="314" text-anchor="middle" font-size="12" font-family="Consolas, monospace" fill="#E2E8F0">terminate-… rm</text>
+  <text x="765" y="336" text-anchor="middle" font-size="12" font-family="Consolas, monospace" fill="#E2E8F0">--delete  --force</text>
+  <text x="765" y="372" text-anchor="middle" font-size="10" fill="#8FA98F">Preview first: --dry-run / --dryrun</text>
+
+  <text x="470" y="430" text-anchor="middle" font-size="12" font-style="italic" fill="#FFFFFF">"Device → action → dials."</text>
+</svg>

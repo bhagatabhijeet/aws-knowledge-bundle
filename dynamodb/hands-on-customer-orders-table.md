@@ -17,7 +17,7 @@ generated:
 
 This walks through a genuinely common DynamoDB use case: an e-commerce site's **order history**, where the one thing an application constantly needs is "show me all of this customer's orders" — fast, regardless of how many customers or orders exist. Every step below has both a **Console** version (clicking through the AWS Console) and a **CLI** version (a command you can copy and run) — pick whichever fits how you work, or use both to check your understanding against each other.
 
-**Prerequisites:** an AWS account, and (for the CLI steps) the [AWS CLI](https://aws.amazon.com/cli/) installed and configured with credentials that have DynamoDB permissions (`aws configure`).
+**Prerequisites:** an AWS account, and (for the CLI steps) the [AWS CLI](https://aws.amazon.com/cli/) installed and configured with credentials that have DynamoDB permissions (`aws configure`) — new to the CLI? See the [AWS CLI guide](../aws-cli/index.md) for [installing](../aws-cli/installing-and-updating.md) and [configuring](../aws-cli/configuring-profiles-and-settings.md) it.
 
 ## The design, up front
 

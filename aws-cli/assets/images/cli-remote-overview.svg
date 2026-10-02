@@ -1,0 +1,62 @@
+<svg viewBox="0 0 940 480" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <defs>
+    <linearGradient id="skycli1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1B2A4A"/>
+      <stop offset="100%" stop-color="#3A5A8C"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="940" height="480" fill="url(#skycli1)"/>
+  <text x="470" y="36" text-anchor="middle" font-size="22" font-weight="700" fill="#FFFFFF">The AWS CLI — The Universal Remote</text>
+  <text x="470" y="58" text-anchor="middle" font-size="12" fill="#CBD5E1">One remote, one grammar, 300+ services</text>
+
+  <!-- Remote -->
+  <rect x="60" y="85" width="270" height="360" rx="34" fill="#232F3E" stroke="#FF9900" stroke-width="4"/>
+  <rect x="85" y="110" width="220" height="62" rx="8" fill="#0F1621" stroke="#59B200" stroke-width="2"/>
+  <text x="195" y="136" text-anchor="middle" font-size="13" font-family="Consolas, monospace" fill="#B7E68A">$ aws s3 ls</text>
+  <text x="195" y="158" text-anchor="middle" font-size="10" fill="#8FA98F">service → action → dials</text>
+
+  <circle cx="125" cy="215" r="24" fill="#FF9900"/><text x="125" y="220" text-anchor="middle" font-size="11" font-weight="700" fill="#232F3E">s3</text>
+  <circle cx="195" cy="215" r="24" fill="#FF9900"/><text x="195" y="220" text-anchor="middle" font-size="11" font-weight="700" fill="#232F3E">ec2</text>
+  <circle cx="265" cy="215" r="24" fill="#FF9900"/><text x="265" y="220" text-anchor="middle" font-size="11" font-weight="700" fill="#232F3E">iam</text>
+  <circle cx="125" cy="275" r="24" fill="#FF9900"/><text x="125" y="280" text-anchor="middle" font-size="10" font-weight="700" fill="#232F3E">dynamo</text>
+  <circle cx="195" cy="275" r="24" fill="#FF9900"/><text x="195" y="280" text-anchor="middle" font-size="10" font-weight="700" fill="#232F3E">lambda</text>
+  <circle cx="265" cy="275" r="24" fill="#FF9900"/><text x="265" y="280" text-anchor="middle" font-size="16" font-weight="700" fill="#232F3E">…</text>
+
+  <rect x="90" y="320" width="210" height="34" rx="17" fill="#3A5A8C" stroke="#CBD5E1" stroke-width="1.5"/>
+  <text x="195" y="342" text-anchor="middle" font-size="11" font-weight="700" fill="#FFFFFF">🎚️ --region  --output  --query</text>
+  <rect x="90" y="368" width="100" height="34" rx="17" fill="#59B200"/>
+  <text x="140" y="390" text-anchor="middle" font-size="11" font-weight="700" fill="#FFFFFF">🏠 profile</text>
+  <rect x="200" y="368" width="100" height="34" rx="17" fill="#D9531E"/>
+  <text x="250" y="390" text-anchor="middle" font-size="11" font-weight="700" fill="#FFFFFF">🔑 creds</text>
+  <text x="195" y="428" text-anchor="middle" font-size="11" fill="#CBD5E1">📡 the `aws` program</text>
+
+  <!-- Arrow -->
+  <path d="M335 265 L420 265" stroke="#FF9900" stroke-width="4" fill="none"/>
+  <polygon points="420,255 440,265 420,275" fill="#FF9900"/>
+  <text x="387" y="250" text-anchor="middle" font-size="10" fill="#FFD9A0">signed API call</text>
+
+  <!-- House of services -->
+  <rect x="450" y="85" width="440" height="360" rx="14" fill="#232F3E" stroke="#59B200" stroke-width="3"/>
+  <text x="670" y="112" text-anchor="middle" font-size="14" font-weight="700" fill="#B7E68A">🏠 Your AWS house (account)</text>
+
+  <rect x="475" y="130" width="190" height="130" rx="10" fill="#2E4A2E" stroke="#59B200" stroke-width="2"/>
+  <text x="570" y="152" text-anchor="middle" font-size="12" font-weight="700" fill="#B7E68A">🗺️ us-east-1</text>
+  <text x="570" y="178" text-anchor="middle" font-size="22">🪣 🖥️ 🗄️</text>
+  <text x="570" y="205" text-anchor="middle" font-size="10" fill="#B7E68A">S3 · EC2 · DynamoDB</text>
+  <text x="570" y="224" text-anchor="middle" font-size="10" fill="#8FA98F">one room (Region)</text>
+
+  <rect x="680" y="130" width="190" height="130" rx="10" fill="#2E3A4A" stroke="#3A9BDC" stroke-width="2"/>
+  <text x="775" y="152" text-anchor="middle" font-size="12" font-weight="700" fill="#A9D7F5">🗺️ eu-west-1</text>
+  <text x="775" y="178" text-anchor="middle" font-size="22">λ 🔐 📬</text>
+  <text x="775" y="205" text-anchor="middle" font-size="10" fill="#A9D7F5">Lambda · IAM · SQS</text>
+  <text x="775" y="224" text-anchor="middle" font-size="10" fill="#8FA98F">another room</text>
+
+  <rect x="475" y="285" width="395" height="140" rx="10" fill="#0F1621" stroke="#FF9900" stroke-width="2"/>
+  <text x="672" y="310" text-anchor="middle" font-size="12" font-weight="700" fill="#FFD9A0">Why a remote beats the wall panel (Console)</text>
+  <text x="672" y="338" text-anchor="middle" font-size="11" fill="#E2E8F0">🔁 Repeatable — same command, same result</text>
+  <text x="672" y="360" text-anchor="middle" font-size="11" fill="#E2E8F0">🤖 Automatable — scripts, cron, CI/CD</text>
+  <text x="672" y="382" text-anchor="middle" font-size="11" fill="#E2E8F0">⚡ Fast — filter 500 lines down to 3 columns</text>
+  <text x="672" y="404" text-anchor="middle" font-size="11" fill="#E2E8F0">📋 Shareable — a command is an exact recipe</text>
+
+  <text x="470" y="470" text-anchor="middle" font-size="12" font-style="italic" fill="#FFFFFF">"If you'll do it twice, type it once."</text>
+</svg>
